@@ -43,7 +43,7 @@ func Best(kn Knowledge, co Corpus) (string, Knowledge, float64) {
 		delta := kn.Delta(sen)
 		u := Usefulness(delta, co)
 		comp := Complexity(delta)
-		if comp > 10 {
+		if comp > 8 {
 			continue
 		}
 		if bestVal < u {
