@@ -19,6 +19,10 @@ func main() {
 		log.Fatal(err)
 	}
 	kn := Knowledge{}
+	Plan(kn, co)
+}
+
+func Plan(kn Knowledge, co Corpus) {
 	n := 1
 	for {
 		// log.Println("Started selecting best sentence")
