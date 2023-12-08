@@ -28,7 +28,7 @@ func main() {
 		}
 		kn.Learn(delta)
 		sc := Usefulness(kn, co)
-		fmt.Printf("%04d %.2f%% %s\n", n, sc*100, sen)
+		fmt.Printf("%4d %4d %.2f%% %s\n", n, int(Complexity(kn)), sc*100, sen)
 		n++
 	}
 }
@@ -158,7 +158,7 @@ func Words(sen string) []string {
 }
 
 func IsSentenceEnd(c rune) bool {
-	return c == '.' || c == '?' || c == '!' || c == ';'
+	return c == '.' || c == '?' || c == '!' || c == ';' || c == '”'
 }
 
 func IsSeparator(c rune) bool {
