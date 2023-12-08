@@ -19,7 +19,43 @@ func main() {
 		log.Fatal(err)
 	}
 	kn := Knowledge{}
-	Plan(kn, co)
+	Cards(kn, co)
+}
+
+func Cards(kn Knowledge, co Corpus) {
+	fmt.Println(`<!DOCTYPE html>
+<html dir="rtl">
+<head>
+<meta charset="UTF-8">
+<style>
+p {
+  font-size: 22px;
+  font-family: serif;
+ padding-bottom: 32px;
+}
+
+.card {
+ page-break-inside: avoid;
+ margin-right: 16%;
+ margin-left: 16%;
+}
+</style>
+<title>Text Document</title>
+</head>
+<body>`)
+	for n := 1; n <= 33; n++ {
+		sen, delta, _ := Best(kn, co)
+		kn.Learn(delta)
+		fmt.Println(`<div class="card">`)
+		fmt.Println(`<h4>`, n, `</h4>`)
+		fmt.Println(`<p>`, sen, `</p>`)
+		fmt.Println(`<hr>`)
+		fmt.Println(`</div>`)
+	}
+	fmt.Println(`
+			</body>
+		</html>
+		`)
 }
 
 func Plan(kn Knowledge, co Corpus) {
