@@ -6,6 +6,7 @@ import (
 	"log"
 	"math"
 	"os"
+	"regexp"
 	"strings"
 	"unicode"
 )
@@ -145,12 +146,22 @@ func MakeCorpus() (Corpus, error) {
 }
 
 func Sentences(text string) []string {
-	var res []string
-	sentences := strings.FieldsFunc(text, IsSentenceEnd)
-	for _, sentence := range sentences {
+	text = strings.ReplaceAll(text, `“`, "")
+	text = strings.ReplaceAll(text, `”`, "")
+	text = strings.ReplaceAll(text, `"`, "")
+	res := []string{}
+	sentenceEnd := regexp.MustCompile(`[.?!]+`)
+	indices := sentenceEnd.FindAllStringIndex(text, -1)
+	start := 0
+	for _, span := range indices {
+		sentence := text[start:span[1]]
+		start = span[1]
 		sentence = strings.ReplaceAll(sentence, "\r\n", " ")
 		sentence = strings.ReplaceAll(sentence, "\n", " ")
 		sentence = strings.TrimSpace(sentence)
+		if sentence == "" {
+			continue
+		}
 		res = append(res, sentence)
 	}
 	return res
@@ -158,14 +169,14 @@ func Sentences(text string) []string {
 
 func Words(sen string) []string {
 	res := []string{}
-	for _, w := range strings.FieldsFunc(sen, IsSeparator) {
-		res = append(res, strings.ToLower(w))
+	for _, word := range strings.FieldsFunc(sen, IsSeparator) {
+		word = strings.ToLower(word)
+		if word == "" {
+			continue
+		}
+		res = append(res, word)
 	}
 	return res
-}
-
-func IsSentenceEnd(c rune) bool {
-	return c == '.' || c == '?' || c == '!' || c == ';' || c == '”'
 }
 
 func IsSeparator(c rune) bool {
