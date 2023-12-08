@@ -20,15 +20,15 @@ func main() {
 	kn := Knowledge{}
 	n := 1
 	for {
-		log.Println("Started selecting best sentence")
+		// log.Println("Started selecting best sentence")
 		sen, delta, u := Best(kn, co)
-		log.Println("Finished selecting best sentence")
-		if u <= 0 {
+		// log.Println("Finished selecting best sentence")
+		if u <= 0.0001 {
 			break
 		}
 		kn.Learn(delta)
 		sc := Usefulness(kn, co)
-		fmt.Printf("%4d %4d %.2f%% %s\n", n, int(Complexity(kn)), sc*100, sen)
+		fmt.Printf("%4d %4d / %4d %.2f%% %s\n", n, int(Complexity(kn)), len(co.wordCount), sc*100, sen)
 		n++
 	}
 }
@@ -137,6 +137,10 @@ func MakeCorpus() (Corpus, error) {
 			co.totalWords += 1
 		}
 	}
+	log.Println("Text size:", len(bt))
+	log.Println("Sentences:", len(sentences))
+	log.Println("Words:", co.totalWords)
+	log.Println("Unique words:", len(co.wordCount))
 	return co, nil
 }
 
@@ -144,13 +148,16 @@ func Sentences(text string) []string {
 	var res []string
 	sentences := strings.FieldsFunc(text, IsSentenceEnd)
 	for _, sentence := range sentences {
-		res = append(res, strings.ReplaceAll(strings.TrimSpace(sentence), "\n", " "))
+		sentence = strings.ReplaceAll(sentence, "\r\n", " ")
+		sentence = strings.ReplaceAll(sentence, "\n", " ")
+		sentence = strings.TrimSpace(sentence)
+		res = append(res, sentence)
 	}
 	return res
 }
 
 func Words(sen string) []string {
-	var res []string
+	res := []string{}
 	for _, w := range strings.FieldsFunc(sen, IsSeparator) {
 		res = append(res, strings.ToLower(w))
 	}
