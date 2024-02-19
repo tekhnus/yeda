@@ -14,9 +14,10 @@ import (
 
 func main() {
 	html := flag.Bool("html", false, "Print html")
+	flag.Parse()
 
 	log.Println("Started loading the corpus")
-	co, err := MakeCorpus(os.Args[1])
+	co, err := MakeCorpus(flag.Arg(0))
 	log.Println("Finished loading the corpus")
 	if err != nil {
 		log.Fatal(err)

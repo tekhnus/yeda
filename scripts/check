@@ -1,0 +1,17 @@
+#!/usr/bin/env sh
+
+die() {
+    echo "$1" >&2
+    exit 1
+}
+
+go run ./cmd/yeda/main.go \
+	internal/testdata/corpus.txt \
+	>internal/testdata/report.txt \
+	|| die
+
+go run ./cmd/yeda/main.go \
+	-html \
+	internal/testdata/corpus.txt \
+	>internal/testdata/cards.html \
+	|| die
