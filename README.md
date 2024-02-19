@@ -1,6 +1,9 @@
 Usage:
 
 ```
+# You'd better install Nix.
+nix develop
+
 # To look at the report:
 ./scripts/run <book.txt>  
 
