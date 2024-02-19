@@ -1,6 +1,7 @@
 package main
 
 import (
+	"flag"
 	"fmt"
 	"io"
 	"log"
@@ -12,17 +13,23 @@ import (
 )
 
 func main() {
+	html := flag.Bool("html", false, "Print html")
+
 	log.Println("Started loading the corpus")
-	co, err := MakeCorpus()
+	co, err := MakeCorpus(os.Args[1])
 	log.Println("Finished loading the corpus")
 	if err != nil {
 		log.Fatal(err)
 	}
 	kn := Knowledge{}
-	Cards(kn, co)
+	if *html {
+		PrintHTMLCards(kn, co)
+	} else {
+		PrintPlaintextReport(kn, co)
+	}
 }
 
-func Cards(kn Knowledge, co Corpus) {
+func PrintHTMLCards(kn Knowledge, co Corpus) {
 	fmt.Println(`<!DOCTYPE html>
 <html dir="rtl">
 <head>
@@ -58,7 +65,7 @@ p {
 		`)
 }
 
-func Plan(kn Knowledge, co Corpus) {
+func PrintPlaintextReport(kn Knowledge, co Corpus) {
 	n := 1
 	for {
 		// log.Println("Started selecting best sentence")
@@ -150,9 +157,9 @@ func (co Corpus) Sentences() func() (string, []string) {
 	}
 }
 
-func MakeCorpus() (Corpus, error) {
+func MakeCorpus(filename string) (Corpus, error) {
 	co := Corpus{}
-	fname := os.ExpandEnv("$HOME/.yeda-corpus.txt")
+	fname := os.ExpandEnv(filename)
 	file, err := os.Open(fname)
 	if err != nil {
 		return co, err
