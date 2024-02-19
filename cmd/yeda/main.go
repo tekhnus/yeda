@@ -70,7 +70,7 @@ func PrintPlaintextReport(kn Knowledge, co Corpus, count int) {
 	fmt.Printf("%d words in corpus\n", len(co.wordCount))
 	fmt.Println()
 
-	fmt.Printf("sentences_learned  words_learned  word_percentage_learned            sentence\n")
+	fmt.Printf("sentences  words  word_percentage    sentence\n")
 	n := 1
 	for {
 		sen, delta, usefulness := Best(kn, co)
@@ -79,7 +79,7 @@ func PrintPlaintextReport(kn Knowledge, co Corpus, count int) {
 		}
 		kn.Learn(delta)
 		sc := Usefulness(kn, co)
-		fmt.Printf("%17d %14d %18s %.1f%% %10s %s\n", n, int(Complexity(kn)), "", sc*100, "", sen)
+		fmt.Printf("%9d %6d %10s %.1f%% %2s %s\n", n, int(Complexity(kn)), "", sc*100, "", sen)
 		n++
 	}
 }

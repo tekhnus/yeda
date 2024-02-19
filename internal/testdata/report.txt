@@ -1,203 +1,203 @@
 1642 words in corpus
 
-sentences_learned  words_learned  word_percentage_learned            sentence
-                1              8                    11.5%            Traddles, that, at the expiration of that period, Mr.
-                2             16                    21.1%            I would rather not, she said to the Doctor.
-                3             24                    27.2%            So the Doctor persisted in making the engagement for her, and Mr.
-                4             32                    32.6%            Why, my dear Copperfield, said the Doctor, you are a man!
-                5             39                    36.3%            His pockets were as full of it as his head.
-                6             44                    39.1%            I hoped he was well, and Mrs.
-                7             52                    41.9%            He would be ELIGIBLE, returned Traddles, with a strong emphasis on that word.
-                8             58                    44.5%            Micawber and our offspring will accompany me.
-                9             66                    46.8%            I dont know how he should have had, for it was new enough to me.
-               10             74                    48.5%            We exhorted him to be resolute in this, and left my aunt to observe him.
-               11             82                    49.9%            And I went on at a mighty rate, as if it could be done by walking.
-               12             90                    51.2%            But somebody is always being murdered, and I didnt read it.
-               13             98                    52.4%            said the Doctor,—which he had always made a very grave appeal to the honour of us boys.
-               14            106                    53.5%            We had not been seated long, when I saw an approaching arrival in Mrs.
-               15            114                    54.5%            Its very gratifying and agreeable to me, I am sure; but dont you think you could do better?
-               16            122                    55.5%            I have little doubt he would have preferred such an employment in his heart to all others.
-               17            130                    56.2%            I explained to Traddles that there was a difficulty in keeping King Charles the First out of Mr.
-               18            138                    57.1%            Then be it so, said the Doctor, clapping me on the shoulder, and still keeping his hand there, as we still walked up and down.
-               19            146                    57.8%            Dick, who had been with me to Highgate twice already, and had resumed his companionship with the Doctor, I took with me.
-               20            154                    58.5%            Micawber, assuming a profound air, a judge, or even say a Chancellor.
-               21            162                    59.4%            She did not look very happy, I thought; but it was a good face, or a very false one.
-               22            170                    60.0%            I got into such a transport, that I felt quite sorry my coat was not a little shabby already.
-               23            177                    60.7%            Theres a long statement in the papers, sir, about a murder, observed Mr.
-               24            185                    61.4%            The Doctor looked grave, and said, as though he wished to change the subject, Then theres no news at all; and no news, they say, is good news.
-               25            193                    62.1%            Micawber—but glancing inquisitively at Traddles, too; we have time enough before us, for the consideration of those questions.
-               26            201                    62.6%            I wondered then, whether she would have gone if Agnes had not been in town, and whether Agnes had some good influence over her too!
-               27            207                    63.2%            Micawber, though it is possible I may be mistaken in my view of the ceremony, I never will!
-               28            213                    63.7%            I stimulated myself into such a heat, and got so out of breath, that I felt as if I had been earning I dont know how much.
-               29            221                    64.2%            I also became once more known to his sister, Miss Micawber, in whom, as Mr.
-               30            226                    64.7%            Jack Maldon was to come back to dinner.
-               31            233                    65.5%            Jack Maldon to suspect from this account that it was a place where there was not much to do, and which was pretty well paid.
-               32            241                    66.2%            I was pretty busy now; up at five in the morning, and home at nine or ten at night.
-               33            249                    66.7%            We were to work two hours every morning, and two or three hours every night, except on Saturdays, when I was to rest.
-               34            257                    67.3%            I hardly ever take breakfast, sir, he replied, with his head thrown back in an easy-chair.
-               35            263                    67.7%            But, my good young friend, whats seventy pounds a year?
-               36            271                    68.2%            Traddles imitated me in the first particular, but did not consider himself a sufficiently old friend to venture on the second.
-               37            279                    68.6%            What I had to do, was, to turn the painful discipline of my younger days to account, by going to work with a resolute and steady heart.
-               38            287                    69.1%            The Doctor, ever pleased with what was likely to please his young wife, turned to her and said:  You must go, Annie.
-               39            295                    69.5%            Micawber, myself, and our offspring, to thank them in the warmest and most uncompromising terms for their good wishes.
-               40            303                    69.9%            Micawber has written in the most gentlemanly terms, announcing that fact, have not taken the least notice of Mr.
-               41            310                    70.3%            These observations, and indeed the greater part of the observations made that evening, were interrupted by Mrs.
-               42            318                    70.6%            I wanted to be cutting at those trees in the forest of difficulty, under circumstances that should prove my strength.
-               43            326                    71.0%            Micawber never missed any possible opportunity of writing a letter) was addressed to me, By the kindness of T.
-               44            334                    71.3%            Traddles, of the obligation which I took upon myself when I repeated the irrevocable words, I, Emma, take thee, Wilkins.
-               45            342                    71.7%            Thomas Traddles, without acquitting myself of the pecuniary part of this obligation, would weigh upon my mind to an insupportable extent.
-               46            349                    72.0%            Our plans being thus arranged to our mutual satisfaction, the Doctor took me into the house to present me to Mrs.
-               47            357                    72.4%            My first care, after putting myself under this necessary course of preparation, was to find the Doctors house.
-               48            365                    72.8%            Micawber referred upon a former occasion, being thrown down in the form of an advertisement, was taken up by my friend Heep, and led to a mutual recognition.
-               49            369                    73.1%            With the new life, came new purpose, new intention.
-               50            377                    73.5%            What I had to do, was, to take my woodmans axe in my hand, and clear my own way through the forest of difficulty, by cutting down the trees until I came to Dora.
-               51            385                    73.8%            Markleham, said the Doctor, was quite vexed about him, poor thing; so we have got him at home again; and we have bought him a little Patent place, which agrees with him much better.
-               52            391                    74.1%            Dick professed an absolute certainty of having seen him before, and we both said, Very likely.
-               53            399                    74.4%            Certainly, your having a profession, and being actually engaged in studying it, makes a difference.
-               54            406                    74.7%            If you will take such time as I have, and that is my mornings and evenings, and can think it worth seventy pounds a year, you will do me such a service as I cannot express.
-               55            412                    75.0%            It really, said Traddles, suddenly, taking a letter out of his pocket, and giving it to me, put Mr.
-               56            420                    75.3%            Traddles having mentioned newspapers to me, as one of his hopes, I had put the two things together, and told Traddles in my letter that I wished to know how I could qualify myself for this pursuit.
-               57            428                    75.6%            The Doctor was quite happy in the prospect of our going to work together on that wonderful performance, and we settled to begin next morning at seven oclock.
-               58            436                    75.9%            Learning from Traddles that the invitation referred to the evening then wearing away, I expressed my readiness to do honour to it; and we went off together to the lodging which Mr.
-               59            444                    76.2%            She had not, but had sent into London to put her cousin off; and had gone out in the afternoon to see Agnes, and had prevailed upon the Doctor to go with her; and they had walked home by the fields, the Doctor told me, the evening being delightful.
-               60            452                    76.4%            Without looking at her cousin, she then addressed me, and asked me about Agnes, and whether she should see her, and whether she was not likely to come that day; and was so much disturbed, that I wondered how even the Doctor, buttering his toast, could be blind to what was so obvious.
-               61            460                    76.7%            Micawber is destined never to receive any answers whatever to the great majority of the communications he writes.
-               62            468                    76.9%            And I shall be twenty times happier, sir, said I, with a little—I hope innocent—flattery, if my employment is to be on the Dictionary.
-               63            476                    77.2%            Micawber, that I am now about to cast my lot among strangers; and I am also aware that the various members of my family, to whom Mr.
-               64            483                    77.4%            Not that I mean to say its rigidly limited to seventy pounds a-year, because I have always contemplated making any young friend I might thus employ, a present too.
-               65            491                    77.6%            He told her, good-naturedly, that she was young and ought to be amused and entertained, and must not allow herself to be made dull by a dull old fellow.
-               66            499                    77.9%            for forty-one, ten, eleven and a half, and I am happy to recover my moral dignity, and to know that I can once more walk erect before my fellow man!
-               67            507                    78.1%            Jack Maldon shook hands with me; but not very warmly, I believed; and with an air of languid patronage, at which I secretly took great umbrage.
-               68            515                    78.4%            Micawber to fill us bumpers, and proposed the toast in due form: shaking hands with him across the table, and kissing Mrs.
-               69            523                    78.6%            I was in a state of ferocious virtue, however, as to young men who were not cutting down trees in the forest of difficulty; and my impression must be received with due allowance.
-               70            531                    78.8%            Micawber had prepared, in a wash-hand-stand jug, what he called a Brew of the agreeable beverage for which he was famous.
-               71            538                    79.0%            The church with the slender spire, that stands on the top of the hill now, was not there then to tell me the time.
-               72            544                    79.2%            Micawber could not be a barrister, without being entered at an inn of court as a student, for five years.
-               73            552                    79.5%            The resources of this lodging were so limited, that we found the twins, now some eight or nine years old, reposing in a turn-up bedstead in the family sitting-room, where Mr.
-               74            559                    79.7%            I cannot express how extremely delighted they both were, by the idea of my aunts being in difficulties; and how comfortable and friendly it made them.
-               75            567                    79.9%            On Monday next, on the arrival of the four oclock afternoon coach at Canterbury, my foot will be on my native heath—my name, Micawber!
-               76            573                    80.1%            I often glanced at it, for she sat in the window all the time we were at work; and made our breakfast, which we took by snatches as we were employed.
-               77            579                    80.3%            Micawber coughed, and drank his punch with an air of exceeding satisfaction—still glancing at Traddles, as if he desired to have his opinion.
-               78            585                    80.5%            It may be expected that on the eve of a migration which will consign us to a perfectly new existence, Mr.
-               79            592                    80.7%            My dear tutor, said I (now, really, without any nonsense), to whom I owe more obligations already than I ever can acknowledge—  No, no, interposed the Doctor.
-               80            600                    80.9%            In this condition, he felt more incapable of finishing the Memorial than ever; and the harder he worked at it, the oftener that unlucky head of King Charles the First got into it.
-               81            608                    81.1%            Dick were that he should copy exactly what he had before him, without the least departure from the original; and that when he felt it necessary to make the slightest allusion to King Charles the First, he should fly to the Memorial.
-               82            616                    81.3%            I have seen it displayed with such success, that I have encountered some fine ladies and gentlemen who might as well have been born caterpillars.
-               83            621                    81.5%            Micawber had got rid of his dust and ashes, and that something really had turned up at last.
-               84            628                    81.6%            Does an individual place himself beyond the pale of those preferments by entering on such an office as Mr.
-               85            634                    81.8%            Micawber possesses what I have heard my papa call, when I lived at home, the judicial mind; and I hope Mr.
-               86            642                    82.0%            The first subject on which I had to consult Traddles was this,—I had heard that many men distinguished in various pursuits had begun life by reporting the debates in Parliament.
-               87            650                    82.2%            Micawber was, I was probably indebted to some compassionate recollection he retained of me as his boy-lodger, for never having been asked by him for money.
-               88            657                    82.4%            I came softly away from my place of observation, and avoiding that part of the neighbourhood, and wishing I had not gone near it, strolled about until it was ten oclock.
-               89            665                    82.6%            When we were nearly come to the last round of the punch, I addressed myself to Traddles, and reminded him that we must not separate, without wishing our friends health, happiness, and success in their new career.
-               90            673                    82.8%            Micawber spoke as if they were going five hundred thousand miles, I should offer a few valedictory remarks to two such friends as I see before me.
-               91            681                    82.9%            He had his old companions about him, too; for there were plenty of high trees in the neighbourhood, and two or three rooks were on the grass, looking after him, as if they had been written to about him by the Canterbury rooks, and were observing him closely in consequence.
-               92            689                    83.1%            When he did, and came towards me, he looked at me thoughtfully for a few moments, evidently without thinking about me at all; and then his benevolent face expressed extraordinary pleasure, and he took me by both hands.
-               93            697                    83.3%            There was a softened shade upon her face, thrown from some green leaves overhanging the open window of the low room; and I thought all the way to Doctors Commons, of the night when I had seen it looking at him as he read.
-               94            702                    83.4%            Micawber told us, her mother renewed her youth, like the Phoenix.
-               95            710                    83.6%            Copperfield, in applying himself to this subordinate branch of the law, place it out of his power to rise, ultimately, to the top of the tree.
-               96            717                    83.8%            Micawber carefully referred to papers, was, I believe, twenty-three, four, nine and a half, of the second, according to my entry of that transaction, eighteen, six, two.
-               97            724                    83.9%            Before we went, I wrote Traddles a full statement of all that had happened, and Traddles wrote me back a capital answer, expressive of his sympathy and friendship.
-               98            728                    84.0%            Micawbers eye, feelingly acquiesced.
-               99            735                    84.2%            I may augur, from the silence of my family, that they object to the resolution I have taken; but I should not allow myself to be swerved from the path of duty, Mr.
-              100            743                    84.3%            In fact, my dear Copperfield, I have entered into arrangements, by virtue of which I stand pledged and contracted to our friend Heep, to assist and serve him in the capacity of—and to be—his confidential clerk.
-              101            749                    84.5%            I am bound to state to you, he said, with an official air, that the business habits, and the prudent suggestions, of Mrs.
-              102            757                    84.6%            He passed his hand complacently over his bald head, and said with ostentatious resignation:  My dear, we will not anticipate the decrees of fortune.
-              103            765                    84.8%            After many compliments on this performance, we fell into some general conversation; and as I was too full of my desperate intentions to keep my altered circumstances to myself, I made them known to Mr.
-              104            773                    84.9%            Thomas Traddles has, on two several occasions, put his name, if I may use a common expression, to bills of exchange for my accommodation.
-              105            777                    85.0%            Steerforths, and looked over the corner of the garden wall.
-              106            785                    85.2%            She gave me the idea of some fierce thing, that was dragging the length of its chain to and fro upon a beaten track, and wearing its heart out.
-              107            791                    85.3%            An old red-brick mansion, used as a school, was in its place; and a fine old house it must have been to go to school at, as I recollect it.
-              108            797                    85.4%            Moreover, he said, he wanted to hear her sing all the new singers songs to him; and how could she do that well, unless she went?
-              109            805                    85.6%            We found him hard at work with his inkstand and papers, refreshed by the sight of the flower-pot stand and the little round table in a corner of the small apartment.
-              110            813                    85.7%            Glancing round as I made a suitable reply, I observed that the family effects were already packed, and that the amount of luggage was by no means overwhelming.
-              111            818                    85.8%            Micawber, who is a man of remarkable shrewdness, I desire to speak with all possible respect.
-              112            826                    86.0%            Micawber, rising with one of his thumbs in each of his waistcoat pockets, the companion of my youth: if I may be allowed the expression—and my esteemed friend Traddles: if I may be permitted to call him so—will allow me, on the part of Mrs.
-              113            834                    86.1%            Strong, whom we found in the Doctors new study, dusting his books,—a freedom which he never permitted anybody else to take with those sacred favourites.
-              114            840                    86.2%            He then said with much solemnity:  One thing more I have to do, before this separation is complete, and that is to perform an act of justice.
-              115            848                    86.4%            When I found myself on the familiar Highgate road, pursuing such a different errand from that old one of pleasure, with which it was associated, it seemed as if a complete change had come on my whole life.
-              116            856                    86.5%            You are bound, in justice to your family, if not to yourself, to take in at a comprehensive glance the extremest point in the horizon to which your abilities may lead you.
-              117            862                    86.7%            I began the next day with another dive into the Roman bath, and then started for Highgate.
-              118            867                    86.8%            In this state, I went into a cottage that I saw was to let, and examined it narrowly,—for I felt it necessary to be practical.
-              119            875                    86.9%            It would do for me and Dora admirably: with a little front garden for Jip to run about in, and bark at the tradespeople through the railings, and a capital room upstairs for my aunt.
-              120            881                    87.0%            Perhaps it impressed me the more then, because it was new to me, but it certainly did not tend to exalt my opinion of, or to strengthen my confidence in, Mr.
-              121            885                    87.1%            Dear me, said Traddles, opening his eyes, I had no idea you were such a determined character, Copperfield!
-              122            889                    87.2%            Traddles and I laying our heads together apart, while Mr.
-              123            897                    87.4%            In bidding adieu to the modern Babylon, where we have undergone many vicissitudes, I trust not ignobly, Mrs.
-              124            903                    87.5%            Thomas Traddles, to our present abode, and there reciprocate the wishes natural to the occasion, you will confer a Boon  On                         One                     Who               Is             Ever yours,         WILKINS MICAWBER.
-              125            905                    87.6%            )  —Has nothing, pursued Traddles, to do with that.
-              126            911                    87.7%            These sums, united, make a total, if my calculation is correct, amounting to forty-one, ten, eleven and a half.
-              127            913                    87.8%            Oh dear, yes!
-              128            920                    87.9%            You have laid a foundation that any edifice may be raised upon; and is it not a pity that you should devote the spring-time of your life to such a poor pursuit as I can offer?
-              129            925                    88.0%            Theres an account about the people being hungry and discontented down in the North, but they are always being hungry and discontented somewhere.
-              130            930                    88.1%            This concluded, he went to his Patent place, I suppose; but at all events went away on his horse, looking very idle.
-              131            935                    88.2%            When I left, at nine oclock, she was kneeling on the ground at the Doctors feet, putting on his shoes and gaiters for him.
-              132            937                    88.3%            Ill begin tomorrow.
-              133            945                    88.5%            Ill buy a book, said I, with a good scheme of this art in it; Ill work at it at the Commons, where I havent half enough to do; Ill take down the speeches in our court for practice—Traddles, my dear fellow, Ill master it!
-              134            949                    88.6%            Traddles—if I could beat a drum—or blow anything!
-              135            957                    88.7%            I had a good mind to ask an old man, in wire spectacles, who was breaking stones upon the road, to lend me his hammer for a little while, and let me begin to beat a path to Dora out of granite.
-              136            963                    88.8%            Micawber and myself cannot disguise from our minds that we part, it may be for years and it may be for ever, with an individual linked by strong associations to the altar of our domestic life.
-              137            969                    89.0%            I read the service over with a flat-candle on the previous night, and the conclusion I derived from it was, that I never could desert Mr.
-              138            974                    89.1%            Micawber, to immure ones-self in a Cathedral town; but surely, Mr.
-              139            982                    89.2%            Our residence at Canterbury, and our local connexion, will, no doubt, enable him to take advantage of any vacancy that may arise in the Cathedral corps.
-              140            988                    89.3%            If I am reserved to wear a wig, I am at least prepared, externally, in allusion to his baldness, for that distinction.
-              141            995                    89.4%            All I have to say on that score is, that the cloud has passed from the dreary scene, and the God of Day is once more high upon the mountain tops.
-              142            999                    89.5%            My whole manner of thinking of our late misfortune was changed.
-              143           1004                    89.6%            Besides which, she is so charmingly ugly, relapsing into languor.
-              144           1010                    89.6%            But I had infinite satisfaction in being so closely engaged, and never walked slowly on any account, and felt enthusiastically that the more I tired myself, the more I was doing to deserve Dora.
-              145           1014                    89.7%            Traddles looked astonished, as he well might; but he had no notion as yet of my rapturous condition.
-              146           1022                    89.9%            I had not revealed myself in my altered character to Dora yet, because she was coming to see Miss Mills in a few days, and I deferred all I had to tell her until then; merely informing her in my letters (all our communications were secretly forwarded through Miss Mills), that I had much to tell her.
-              147           1027                    90.0%            Dick in the meanwhile looking very deferentially and seriously at Traddles, and sucking his thumb.
-              148           1035                    90.1%            Seriously apprehending that his malady would increase, unless we put some innocent deception upon him and caused him to believe that he was useful, or unless we could put him in the way of being really useful (which would be better), I made up my mind to try if Traddles could help us.
-              149           1040                    90.2%            Micawber forfeits no privilege by entering on these duties, my anxiety is set at rest.
-              150           1045                    90.3%            Micawber is now entering on a field where that mind will develop itself, and take a commanding station.
-              151           1050                    90.4%            It is my intention, my dear Copperfield, to educate my son for the Church; I will not deny that I should be happy, on his account, to attain to eminence.
-              152           1058                    90.5%            Whatever station in society I may attain, through the medium of the learned profession of which I am about to become an unworthy member, I shall endeavour not to disgrace, and Mrs.
-              153           1062                    90.6%            said I, still pondering, between whiles, on Uriah Heep.
-              154           1066                    90.7%            Micawber resumed his seat on the close of these remarks, and drank two glasses of punch in grave succession.
-              155           1072                    90.8%            Micawber walked so erect before his fellow man, on the strength of this virtuous action, that his chest looked half as broad again when he lighted us downstairs.
-              156           1076                    90.9%            I certainly should not have had the moral courage to refuse it; and I have no doubt he knew that (to his credit be it written), quite as well as I did.
-              157           1080                    91.0%            I was not afraid of the shabby coat, and had no yearnings after gallant greys.
-              158           1088                    91.1%            I became very glowing again, and, expressing myself in a rhapsodical style, I am afraid, urged my request strongly; reminding the Doctor that I had already a profession.
-              159           1093                    91.2%            What I had to do, was, to show my aunt that her past goodness to me had not been thrown away on an insensible, ungrateful object.
-              160           1096                    91.2%            Steerforth lived, but quite on the opposite side of the little town.
-              161           1104                    91.4%            When I approached the Doctors cottage—a pretty old place, on which he seemed to have expended some money, if I might judge from the embellishments and repairs that had the look of being just completed—I saw him walking in the garden at the side, gaiters and all, as if he had never left off walking since the days of my pupilage.
-              162           1112                    91.5%            A display of indifference to all the actions and passions of mankind was not supposed to be such a distinguished quality at that time, I think, as I have observed it to be considered since.
-              163           1117                    91.6%            The Doctor, walking up and down with his hand on my shoulder, and his kind face turned encouragingly to mine, went on:  Now, my dear Copperfield, in reference to this proposal of yours.
-              164           1121                    91.7%            Traddles, who would not have smiled for the world, replied composedly:  But you are a very good penman, sir.
-              165           1129                    91.8%            He was like one under the propitious influence of a charm, from the moment of his being usefully employed; and if there were a happy man in the world, that Saturday night, it was the grateful creature who thought my aunt the most wonderful woman in existence, and me the most wonderful young man.
-              166           1134                    91.9%            Traddles find us on the brink of migration, and will excuse any little discomforts incidental to that position.
-              167           1139                    92.0%            Micawber, boastfully disparaging himself, with the old genteel air, will be devoted to my friend Heeps service.
-              168           1143                    92.0%            Micawber resumed the thread of the discourse, and claimed my attention.
-              169           1151                    92.2%            Knowing the utter hopelessness of attracting his attention from that distance, I made bold to open the gate, and walk after him, so as to meet him when he should turn round.
-              170           1156                    92.2%            Micawber, giving his mind to a profession so adapted to his fertile resources, and his flow of language, must distinguish himself.
-              171           1160                    92.3%            Traddles, I wish to be as prosaic and literal as possible on a subject of so much importance.
-              172           1164                    92.4%            Micawber, regret my hair, and I may have been deprived of it for a specific purpose.
-              173           1166                    92.5%            Thomas Traddles was left—let me say, in short, in the lurch.
-              174           1169                    92.5%            I am persuaded, not only that this was quite the same to Mr.
-              175           1172                    92.6%            Great was the labour; priceless the reward.
-              176           1176                    92.6%            When I had made this discovery, I went back, in an attraction I could not resist, to a lane by Mrs.
-              177           1178                    92.7%            Jack Maldon was not at all improved by India, I thought.
-              178           1181                    92.8%            But these writings, you know, that I speak of, are already drawn up and finished, said Traddles after a little consideration.
-              179           1185                    92.8%            Dick anxiously watched us from his chair, we concocted a scheme in virtue of which we got him to work next day, with triumphant success.
-              180           1189                    92.9%            It ran thus:—  MY DEAR COPPERFIELD,  You may possibly not be unprepared to receive the intimation that something has turned up.
-              181           1191                    92.9%            I expressed my opinion that this was going in the right direction.
-              182           1192                    93.0%            It may be a sacrifice, said Mrs.
-              183           1195                    93.1%            Micawber, who greatly enjoyed my surprise.
-              184           1198                    93.1%            Micawber, have in a great measure conduced to this result.
-              185           1202                    93.2%            Such address and intelligence as I chance to possess, said Mr.
-              186           1205                    93.2%            I believe it is unnecessary to add that I allude to Mr.
-              187           1208                    93.3%            He has a remarkable head-voice, and will commence as a chorister.
-              188           1211                    93.3%            Thomas Traddles, and I now hold in my hand, a document, which accomplishes the desired object.
-              189           1219                    93.5%            On a table by the window in Buckingham Street, we set out the work Traddles procured for him—which was to make, I forget how many copies of a legal document about some right of way—and on another table we spread the last unfinished original of the great Memorial.
-              190           1227                    93.6%            Not satisfied with all these proceedings, but burning with impatience to do something more, I went to see Traddles, now lodging up behind the parapet of a house in Castle Street, Holborn.
-              191           1230                    93.7%            Jack Maldon couldnt bear the climate, my dear.
-              192           1232                    93.7%            Forgotten the Old Soldier!
-              193           1234                    93.8%            Afterwards, when we were fairly at our work, I found Mr.
-              194           1237                    93.8%            I came out to inquire whether Annie would like to go to the opera tonight, said Mr.
-              195           1239                    93.8%            I prefer to remain at home.
-              196           1241                    93.9%            Eh, Trotwood?
-              197           1244                    93.9%            and he flourished his ten fingers in the air, as if they were ten banks.
-              198           1247                    94.0%            Traddles, Esquire, of the Inner Temple.
-              199           1250                    94.0%            Mortimer, and which was situated near the top of the Grays Inn Road.
-              200           1253                    94.1%            Micawber, of your friendly interest in all our affairs, I am well assured.
+sentences  words  word_percentage    sentence
+        1      8            11.5%    Traddles, that, at the expiration of that period, Mr.
+        2     16            21.1%    I would rather not, she said to the Doctor.
+        3     24            27.2%    So the Doctor persisted in making the engagement for her, and Mr.
+        4     32            32.6%    Why, my dear Copperfield, said the Doctor, you are a man!
+        5     39            36.3%    His pockets were as full of it as his head.
+        6     44            39.1%    I hoped he was well, and Mrs.
+        7     52            41.9%    He would be ELIGIBLE, returned Traddles, with a strong emphasis on that word.
+        8     58            44.5%    Micawber and our offspring will accompany me.
+        9     66            46.8%    I dont know how he should have had, for it was new enough to me.
+       10     74            48.5%    We exhorted him to be resolute in this, and left my aunt to observe him.
+       11     82            49.9%    And I went on at a mighty rate, as if it could be done by walking.
+       12     90            51.2%    But somebody is always being murdered, and I didnt read it.
+       13     98            52.4%    said the Doctor,—which he had always made a very grave appeal to the honour of us boys.
+       14    106            53.5%    We had not been seated long, when I saw an approaching arrival in Mrs.
+       15    114            54.5%    Its very gratifying and agreeable to me, I am sure; but dont you think you could do better?
+       16    122            55.5%    I have little doubt he would have preferred such an employment in his heart to all others.
+       17    130            56.2%    I explained to Traddles that there was a difficulty in keeping King Charles the First out of Mr.
+       18    138            57.1%    Then be it so, said the Doctor, clapping me on the shoulder, and still keeping his hand there, as we still walked up and down.
+       19    146            57.8%    Dick, who had been with me to Highgate twice already, and had resumed his companionship with the Doctor, I took with me.
+       20    154            58.5%    Micawber, assuming a profound air, a judge, or even say a Chancellor.
+       21    162            59.4%    She did not look very happy, I thought; but it was a good face, or a very false one.
+       22    170            60.0%    I got into such a transport, that I felt quite sorry my coat was not a little shabby already.
+       23    177            60.7%    Theres a long statement in the papers, sir, about a murder, observed Mr.
+       24    185            61.4%    The Doctor looked grave, and said, as though he wished to change the subject, Then theres no news at all; and no news, they say, is good news.
+       25    193            62.1%    Micawber—but glancing inquisitively at Traddles, too; we have time enough before us, for the consideration of those questions.
+       26    201            62.6%    I wondered then, whether she would have gone if Agnes had not been in town, and whether Agnes had some good influence over her too!
+       27    207            63.2%    Micawber, though it is possible I may be mistaken in my view of the ceremony, I never will!
+       28    213            63.7%    I stimulated myself into such a heat, and got so out of breath, that I felt as if I had been earning I dont know how much.
+       29    221            64.2%    I also became once more known to his sister, Miss Micawber, in whom, as Mr.
+       30    226            64.7%    Jack Maldon was to come back to dinner.
+       31    233            65.5%    Jack Maldon to suspect from this account that it was a place where there was not much to do, and which was pretty well paid.
+       32    241            66.2%    I was pretty busy now; up at five in the morning, and home at nine or ten at night.
+       33    249            66.7%    We were to work two hours every morning, and two or three hours every night, except on Saturdays, when I was to rest.
+       34    257            67.3%    I hardly ever take breakfast, sir, he replied, with his head thrown back in an easy-chair.
+       35    263            67.7%    But, my good young friend, whats seventy pounds a year?
+       36    271            68.2%    Traddles imitated me in the first particular, but did not consider himself a sufficiently old friend to venture on the second.
+       37    279            68.6%    What I had to do, was, to turn the painful discipline of my younger days to account, by going to work with a resolute and steady heart.
+       38    287            69.1%    The Doctor, ever pleased with what was likely to please his young wife, turned to her and said:  You must go, Annie.
+       39    295            69.5%    Micawber, myself, and our offspring, to thank them in the warmest and most uncompromising terms for their good wishes.
+       40    303            69.9%    Micawber has written in the most gentlemanly terms, announcing that fact, have not taken the least notice of Mr.
+       41    310            70.3%    These observations, and indeed the greater part of the observations made that evening, were interrupted by Mrs.
+       42    318            70.6%    I wanted to be cutting at those trees in the forest of difficulty, under circumstances that should prove my strength.
+       43    326            71.0%    Micawber never missed any possible opportunity of writing a letter) was addressed to me, By the kindness of T.
+       44    334            71.3%    Traddles, of the obligation which I took upon myself when I repeated the irrevocable words, I, Emma, take thee, Wilkins.
+       45    342            71.7%    Thomas Traddles, without acquitting myself of the pecuniary part of this obligation, would weigh upon my mind to an insupportable extent.
+       46    349            72.0%    Our plans being thus arranged to our mutual satisfaction, the Doctor took me into the house to present me to Mrs.
+       47    357            72.4%    My first care, after putting myself under this necessary course of preparation, was to find the Doctors house.
+       48    365            72.8%    Micawber referred upon a former occasion, being thrown down in the form of an advertisement, was taken up by my friend Heep, and led to a mutual recognition.
+       49    369            73.1%    With the new life, came new purpose, new intention.
+       50    377            73.5%    What I had to do, was, to take my woodmans axe in my hand, and clear my own way through the forest of difficulty, by cutting down the trees until I came to Dora.
+       51    385            73.8%    Markleham, said the Doctor, was quite vexed about him, poor thing; so we have got him at home again; and we have bought him a little Patent place, which agrees with him much better.
+       52    391            74.1%    Dick professed an absolute certainty of having seen him before, and we both said, Very likely.
+       53    399            74.4%    Certainly, your having a profession, and being actually engaged in studying it, makes a difference.
+       54    406            74.7%    If you will take such time as I have, and that is my mornings and evenings, and can think it worth seventy pounds a year, you will do me such a service as I cannot express.
+       55    412            75.0%    It really, said Traddles, suddenly, taking a letter out of his pocket, and giving it to me, put Mr.
+       56    420            75.3%    Traddles having mentioned newspapers to me, as one of his hopes, I had put the two things together, and told Traddles in my letter that I wished to know how I could qualify myself for this pursuit.
+       57    428            75.6%    The Doctor was quite happy in the prospect of our going to work together on that wonderful performance, and we settled to begin next morning at seven oclock.
+       58    436            75.9%    Learning from Traddles that the invitation referred to the evening then wearing away, I expressed my readiness to do honour to it; and we went off together to the lodging which Mr.
+       59    444            76.2%    She had not, but had sent into London to put her cousin off; and had gone out in the afternoon to see Agnes, and had prevailed upon the Doctor to go with her; and they had walked home by the fields, the Doctor told me, the evening being delightful.
+       60    452            76.4%    Without looking at her cousin, she then addressed me, and asked me about Agnes, and whether she should see her, and whether she was not likely to come that day; and was so much disturbed, that I wondered how even the Doctor, buttering his toast, could be blind to what was so obvious.
+       61    460            76.7%    Micawber is destined never to receive any answers whatever to the great majority of the communications he writes.
+       62    468            76.9%    And I shall be twenty times happier, sir, said I, with a little—I hope innocent—flattery, if my employment is to be on the Dictionary.
+       63    476            77.2%    Micawber, that I am now about to cast my lot among strangers; and I am also aware that the various members of my family, to whom Mr.
+       64    483            77.4%    Not that I mean to say its rigidly limited to seventy pounds a-year, because I have always contemplated making any young friend I might thus employ, a present too.
+       65    491            77.6%    He told her, good-naturedly, that she was young and ought to be amused and entertained, and must not allow herself to be made dull by a dull old fellow.
+       66    499            77.9%    for forty-one, ten, eleven and a half, and I am happy to recover my moral dignity, and to know that I can once more walk erect before my fellow man!
+       67    507            78.1%    Jack Maldon shook hands with me; but not very warmly, I believed; and with an air of languid patronage, at which I secretly took great umbrage.
+       68    515            78.4%    Micawber to fill us bumpers, and proposed the toast in due form: shaking hands with him across the table, and kissing Mrs.
+       69    523            78.6%    I was in a state of ferocious virtue, however, as to young men who were not cutting down trees in the forest of difficulty; and my impression must be received with due allowance.
+       70    531            78.8%    Micawber had prepared, in a wash-hand-stand jug, what he called a Brew of the agreeable beverage for which he was famous.
+       71    538            79.0%    The church with the slender spire, that stands on the top of the hill now, was not there then to tell me the time.
+       72    544            79.2%    Micawber could not be a barrister, without being entered at an inn of court as a student, for five years.
+       73    552            79.5%    The resources of this lodging were so limited, that we found the twins, now some eight or nine years old, reposing in a turn-up bedstead in the family sitting-room, where Mr.
+       74    559            79.7%    I cannot express how extremely delighted they both were, by the idea of my aunts being in difficulties; and how comfortable and friendly it made them.
+       75    567            79.9%    On Monday next, on the arrival of the four oclock afternoon coach at Canterbury, my foot will be on my native heath—my name, Micawber!
+       76    573            80.1%    I often glanced at it, for she sat in the window all the time we were at work; and made our breakfast, which we took by snatches as we were employed.
+       77    579            80.3%    Micawber coughed, and drank his punch with an air of exceeding satisfaction—still glancing at Traddles, as if he desired to have his opinion.
+       78    585            80.5%    It may be expected that on the eve of a migration which will consign us to a perfectly new existence, Mr.
+       79    592            80.7%    My dear tutor, said I (now, really, without any nonsense), to whom I owe more obligations already than I ever can acknowledge—  No, no, interposed the Doctor.
+       80    600            80.9%    In this condition, he felt more incapable of finishing the Memorial than ever; and the harder he worked at it, the oftener that unlucky head of King Charles the First got into it.
+       81    608            81.1%    Dick were that he should copy exactly what he had before him, without the least departure from the original; and that when he felt it necessary to make the slightest allusion to King Charles the First, he should fly to the Memorial.
+       82    616            81.3%    I have seen it displayed with such success, that I have encountered some fine ladies and gentlemen who might as well have been born caterpillars.
+       83    621            81.5%    Micawber had got rid of his dust and ashes, and that something really had turned up at last.
+       84    628            81.6%    Does an individual place himself beyond the pale of those preferments by entering on such an office as Mr.
+       85    634            81.8%    Micawber possesses what I have heard my papa call, when I lived at home, the judicial mind; and I hope Mr.
+       86    642            82.0%    The first subject on which I had to consult Traddles was this,—I had heard that many men distinguished in various pursuits had begun life by reporting the debates in Parliament.
+       87    650            82.2%    Micawber was, I was probably indebted to some compassionate recollection he retained of me as his boy-lodger, for never having been asked by him for money.
+       88    657            82.4%    I came softly away from my place of observation, and avoiding that part of the neighbourhood, and wishing I had not gone near it, strolled about until it was ten oclock.
+       89    665            82.6%    When we were nearly come to the last round of the punch, I addressed myself to Traddles, and reminded him that we must not separate, without wishing our friends health, happiness, and success in their new career.
+       90    673            82.8%    Micawber spoke as if they were going five hundred thousand miles, I should offer a few valedictory remarks to two such friends as I see before me.
+       91    681            82.9%    He had his old companions about him, too; for there were plenty of high trees in the neighbourhood, and two or three rooks were on the grass, looking after him, as if they had been written to about him by the Canterbury rooks, and were observing him closely in consequence.
+       92    689            83.1%    When he did, and came towards me, he looked at me thoughtfully for a few moments, evidently without thinking about me at all; and then his benevolent face expressed extraordinary pleasure, and he took me by both hands.
+       93    697            83.3%    There was a softened shade upon her face, thrown from some green leaves overhanging the open window of the low room; and I thought all the way to Doctors Commons, of the night when I had seen it looking at him as he read.
+       94    702            83.4%    Micawber told us, her mother renewed her youth, like the Phoenix.
+       95    710            83.6%    Copperfield, in applying himself to this subordinate branch of the law, place it out of his power to rise, ultimately, to the top of the tree.
+       96    717            83.8%    Micawber carefully referred to papers, was, I believe, twenty-three, four, nine and a half, of the second, according to my entry of that transaction, eighteen, six, two.
+       97    724            83.9%    Before we went, I wrote Traddles a full statement of all that had happened, and Traddles wrote me back a capital answer, expressive of his sympathy and friendship.
+       98    728            84.0%    Micawbers eye, feelingly acquiesced.
+       99    735            84.2%    I may augur, from the silence of my family, that they object to the resolution I have taken; but I should not allow myself to be swerved from the path of duty, Mr.
+      100    743            84.3%    In fact, my dear Copperfield, I have entered into arrangements, by virtue of which I stand pledged and contracted to our friend Heep, to assist and serve him in the capacity of—and to be—his confidential clerk.
+      101    749            84.5%    I am bound to state to you, he said, with an official air, that the business habits, and the prudent suggestions, of Mrs.
+      102    757            84.6%    He passed his hand complacently over his bald head, and said with ostentatious resignation:  My dear, we will not anticipate the decrees of fortune.
+      103    765            84.8%    After many compliments on this performance, we fell into some general conversation; and as I was too full of my desperate intentions to keep my altered circumstances to myself, I made them known to Mr.
+      104    773            84.9%    Thomas Traddles has, on two several occasions, put his name, if I may use a common expression, to bills of exchange for my accommodation.
+      105    777            85.0%    Steerforths, and looked over the corner of the garden wall.
+      106    785            85.2%    She gave me the idea of some fierce thing, that was dragging the length of its chain to and fro upon a beaten track, and wearing its heart out.
+      107    791            85.3%    An old red-brick mansion, used as a school, was in its place; and a fine old house it must have been to go to school at, as I recollect it.
+      108    797            85.4%    Moreover, he said, he wanted to hear her sing all the new singers songs to him; and how could she do that well, unless she went?
+      109    805            85.6%    We found him hard at work with his inkstand and papers, refreshed by the sight of the flower-pot stand and the little round table in a corner of the small apartment.
+      110    813            85.7%    Glancing round as I made a suitable reply, I observed that the family effects were already packed, and that the amount of luggage was by no means overwhelming.
+      111    818            85.8%    Micawber, who is a man of remarkable shrewdness, I desire to speak with all possible respect.
+      112    826            86.0%    Micawber, rising with one of his thumbs in each of his waistcoat pockets, the companion of my youth: if I may be allowed the expression—and my esteemed friend Traddles: if I may be permitted to call him so—will allow me, on the part of Mrs.
+      113    834            86.1%    Strong, whom we found in the Doctors new study, dusting his books,—a freedom which he never permitted anybody else to take with those sacred favourites.
+      114    840            86.2%    He then said with much solemnity:  One thing more I have to do, before this separation is complete, and that is to perform an act of justice.
+      115    848            86.4%    When I found myself on the familiar Highgate road, pursuing such a different errand from that old one of pleasure, with which it was associated, it seemed as if a complete change had come on my whole life.
+      116    856            86.5%    You are bound, in justice to your family, if not to yourself, to take in at a comprehensive glance the extremest point in the horizon to which your abilities may lead you.
+      117    862            86.7%    I began the next day with another dive into the Roman bath, and then started for Highgate.
+      118    867            86.8%    In this state, I went into a cottage that I saw was to let, and examined it narrowly,—for I felt it necessary to be practical.
+      119    875            86.9%    It would do for me and Dora admirably: with a little front garden for Jip to run about in, and bark at the tradespeople through the railings, and a capital room upstairs for my aunt.
+      120    881            87.0%    Perhaps it impressed me the more then, because it was new to me, but it certainly did not tend to exalt my opinion of, or to strengthen my confidence in, Mr.
+      121    885            87.1%    Dear me, said Traddles, opening his eyes, I had no idea you were such a determined character, Copperfield!
+      122    889            87.2%    Traddles and I laying our heads together apart, while Mr.
+      123    897            87.4%    In bidding adieu to the modern Babylon, where we have undergone many vicissitudes, I trust not ignobly, Mrs.
+      124    903            87.5%    Thomas Traddles, to our present abode, and there reciprocate the wishes natural to the occasion, you will confer a Boon  On                         One                     Who               Is             Ever yours,         WILKINS MICAWBER.
+      125    905            87.6%    )  —Has nothing, pursued Traddles, to do with that.
+      126    911            87.7%    These sums, united, make a total, if my calculation is correct, amounting to forty-one, ten, eleven and a half.
+      127    913            87.8%    Oh dear, yes!
+      128    920            87.9%    You have laid a foundation that any edifice may be raised upon; and is it not a pity that you should devote the spring-time of your life to such a poor pursuit as I can offer?
+      129    925            88.0%    Theres an account about the people being hungry and discontented down in the North, but they are always being hungry and discontented somewhere.
+      130    930            88.1%    This concluded, he went to his Patent place, I suppose; but at all events went away on his horse, looking very idle.
+      131    935            88.2%    When I left, at nine oclock, she was kneeling on the ground at the Doctors feet, putting on his shoes and gaiters for him.
+      132    937            88.3%    Ill begin tomorrow.
+      133    945            88.5%    Ill buy a book, said I, with a good scheme of this art in it; Ill work at it at the Commons, where I havent half enough to do; Ill take down the speeches in our court for practice—Traddles, my dear fellow, Ill master it!
+      134    949            88.6%    Traddles—if I could beat a drum—or blow anything!
+      135    957            88.7%    I had a good mind to ask an old man, in wire spectacles, who was breaking stones upon the road, to lend me his hammer for a little while, and let me begin to beat a path to Dora out of granite.
+      136    963            88.8%    Micawber and myself cannot disguise from our minds that we part, it may be for years and it may be for ever, with an individual linked by strong associations to the altar of our domestic life.
+      137    969            89.0%    I read the service over with a flat-candle on the previous night, and the conclusion I derived from it was, that I never could desert Mr.
+      138    974            89.1%    Micawber, to immure ones-self in a Cathedral town; but surely, Mr.
+      139    982            89.2%    Our residence at Canterbury, and our local connexion, will, no doubt, enable him to take advantage of any vacancy that may arise in the Cathedral corps.
+      140    988            89.3%    If I am reserved to wear a wig, I am at least prepared, externally, in allusion to his baldness, for that distinction.
+      141    995            89.4%    All I have to say on that score is, that the cloud has passed from the dreary scene, and the God of Day is once more high upon the mountain tops.
+      142    999            89.5%    My whole manner of thinking of our late misfortune was changed.
+      143   1004            89.6%    Besides which, she is so charmingly ugly, relapsing into languor.
+      144   1010            89.6%    But I had infinite satisfaction in being so closely engaged, and never walked slowly on any account, and felt enthusiastically that the more I tired myself, the more I was doing to deserve Dora.
+      145   1014            89.7%    Traddles looked astonished, as he well might; but he had no notion as yet of my rapturous condition.
+      146   1022            89.9%    I had not revealed myself in my altered character to Dora yet, because she was coming to see Miss Mills in a few days, and I deferred all I had to tell her until then; merely informing her in my letters (all our communications were secretly forwarded through Miss Mills), that I had much to tell her.
+      147   1027            90.0%    Dick in the meanwhile looking very deferentially and seriously at Traddles, and sucking his thumb.
+      148   1035            90.1%    Seriously apprehending that his malady would increase, unless we put some innocent deception upon him and caused him to believe that he was useful, or unless we could put him in the way of being really useful (which would be better), I made up my mind to try if Traddles could help us.
+      149   1040            90.2%    Micawber forfeits no privilege by entering on these duties, my anxiety is set at rest.
+      150   1045            90.3%    Micawber is now entering on a field where that mind will develop itself, and take a commanding station.
+      151   1050            90.4%    It is my intention, my dear Copperfield, to educate my son for the Church; I will not deny that I should be happy, on his account, to attain to eminence.
+      152   1058            90.5%    Whatever station in society I may attain, through the medium of the learned profession of which I am about to become an unworthy member, I shall endeavour not to disgrace, and Mrs.
+      153   1062            90.6%    said I, still pondering, between whiles, on Uriah Heep.
+      154   1066            90.7%    Micawber resumed his seat on the close of these remarks, and drank two glasses of punch in grave succession.
+      155   1072            90.8%    Micawber walked so erect before his fellow man, on the strength of this virtuous action, that his chest looked half as broad again when he lighted us downstairs.
+      156   1076            90.9%    I certainly should not have had the moral courage to refuse it; and I have no doubt he knew that (to his credit be it written), quite as well as I did.
+      157   1080            91.0%    I was not afraid of the shabby coat, and had no yearnings after gallant greys.
+      158   1088            91.1%    I became very glowing again, and, expressing myself in a rhapsodical style, I am afraid, urged my request strongly; reminding the Doctor that I had already a profession.
+      159   1093            91.2%    What I had to do, was, to show my aunt that her past goodness to me had not been thrown away on an insensible, ungrateful object.
+      160   1096            91.2%    Steerforth lived, but quite on the opposite side of the little town.
+      161   1104            91.4%    When I approached the Doctors cottage—a pretty old place, on which he seemed to have expended some money, if I might judge from the embellishments and repairs that had the look of being just completed—I saw him walking in the garden at the side, gaiters and all, as if he had never left off walking since the days of my pupilage.
+      162   1112            91.5%    A display of indifference to all the actions and passions of mankind was not supposed to be such a distinguished quality at that time, I think, as I have observed it to be considered since.
+      163   1117            91.6%    The Doctor, walking up and down with his hand on my shoulder, and his kind face turned encouragingly to mine, went on:  Now, my dear Copperfield, in reference to this proposal of yours.
+      164   1121            91.7%    Traddles, who would not have smiled for the world, replied composedly:  But you are a very good penman, sir.
+      165   1129            91.8%    He was like one under the propitious influence of a charm, from the moment of his being usefully employed; and if there were a happy man in the world, that Saturday night, it was the grateful creature who thought my aunt the most wonderful woman in existence, and me the most wonderful young man.
+      166   1134            91.9%    Traddles find us on the brink of migration, and will excuse any little discomforts incidental to that position.
+      167   1139            92.0%    Micawber, boastfully disparaging himself, with the old genteel air, will be devoted to my friend Heeps service.
+      168   1143            92.0%    Micawber resumed the thread of the discourse, and claimed my attention.
+      169   1151            92.2%    Knowing the utter hopelessness of attracting his attention from that distance, I made bold to open the gate, and walk after him, so as to meet him when he should turn round.
+      170   1156            92.2%    Micawber, giving his mind to a profession so adapted to his fertile resources, and his flow of language, must distinguish himself.
+      171   1160            92.3%    Traddles, I wish to be as prosaic and literal as possible on a subject of so much importance.
+      172   1164            92.4%    Micawber, regret my hair, and I may have been deprived of it for a specific purpose.
+      173   1166            92.5%    Thomas Traddles was left—let me say, in short, in the lurch.
+      174   1169            92.5%    I am persuaded, not only that this was quite the same to Mr.
+      175   1172            92.6%    Great was the labour; priceless the reward.
+      176   1176            92.6%    When I had made this discovery, I went back, in an attraction I could not resist, to a lane by Mrs.
+      177   1178            92.7%    Jack Maldon was not at all improved by India, I thought.
+      178   1181            92.8%    But these writings, you know, that I speak of, are already drawn up and finished, said Traddles after a little consideration.
+      179   1185            92.8%    Dick anxiously watched us from his chair, we concocted a scheme in virtue of which we got him to work next day, with triumphant success.
+      180   1189            92.9%    It ran thus:—  MY DEAR COPPERFIELD,  You may possibly not be unprepared to receive the intimation that something has turned up.
+      181   1191            92.9%    I expressed my opinion that this was going in the right direction.
+      182   1192            93.0%    It may be a sacrifice, said Mrs.
+      183   1195            93.1%    Micawber, who greatly enjoyed my surprise.
+      184   1198            93.1%    Micawber, have in a great measure conduced to this result.
+      185   1202            93.2%    Such address and intelligence as I chance to possess, said Mr.
+      186   1205            93.2%    I believe it is unnecessary to add that I allude to Mr.
+      187   1208            93.3%    He has a remarkable head-voice, and will commence as a chorister.
+      188   1211            93.3%    Thomas Traddles, and I now hold in my hand, a document, which accomplishes the desired object.
+      189   1219            93.5%    On a table by the window in Buckingham Street, we set out the work Traddles procured for him—which was to make, I forget how many copies of a legal document about some right of way—and on another table we spread the last unfinished original of the great Memorial.
+      190   1227            93.6%    Not satisfied with all these proceedings, but burning with impatience to do something more, I went to see Traddles, now lodging up behind the parapet of a house in Castle Street, Holborn.
+      191   1230            93.7%    Jack Maldon couldnt bear the climate, my dear.
+      192   1232            93.7%    Forgotten the Old Soldier!
+      193   1234            93.8%    Afterwards, when we were fairly at our work, I found Mr.
+      194   1237            93.8%    I came out to inquire whether Annie would like to go to the opera tonight, said Mr.
+      195   1239            93.8%    I prefer to remain at home.
+      196   1241            93.9%    Eh, Trotwood?
+      197   1244            93.9%    and he flourished his ten fingers in the air, as if they were ten banks.
+      198   1247            94.0%    Traddles, Esquire, of the Inner Temple.
+      199   1250            94.0%    Mortimer, and which was situated near the top of the Grays Inn Road.
+      200   1253            94.1%    Micawber, of your friendly interest in all our affairs, I am well assured.
