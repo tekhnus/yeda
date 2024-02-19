@@ -186,8 +186,7 @@ func MakeCorpus(filename string) (Corpus, error) {
 		}
 		sen := Words(cleanSentence)
 		niceSentence := rawSentence
-		niceSentence = strings.ReplaceAll(niceSentence, "\r\n", " ")
-		niceSentence = strings.ReplaceAll(niceSentence, "\n", " ")
+		niceSentence = MakeNice(niceSentence)
 		co.rawSentences = append(co.rawSentences, niceSentence)
 		co.sentences = append(co.sentences, sen)
 	}
@@ -204,6 +203,20 @@ func MakeCorpus(filename string) (Corpus, error) {
 	log.Println("Words:", co.totalWords)
 	log.Println("Unique words:", len(co.wordCount))
 	return co, nil
+}
+
+func MakeNice(rawSentence string) string {
+	rawSentence = strings.ReplaceAll(rawSentence, "\r\n", " ")
+	rawSentence = strings.ReplaceAll(rawSentence, "\n", " ")
+
+	// This regex pattern matches a string that starts and ends with a letter, capturing it for extraction
+	pattern := regexp.MustCompile(`(?i)^[^a-z]*([a-z].*?[a-z])[^a-z]*$`)
+	matches := pattern.FindStringSubmatch(rawSentence)
+
+	if len(matches) > 1 {
+		return matches[1]
+	}
+	return ""
 }
 
 func Clean(rawSentence string) string {
