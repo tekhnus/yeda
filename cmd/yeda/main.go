@@ -179,9 +179,16 @@ func MakeCorpus(filename string) (Corpus, error) {
 	}
 	sentences := Sentences(string(bt))
 
-	for _, rawsentence := range sentences {
-		sen := Words(rawsentence)
-		co.rawSentences = append(co.rawSentences, rawsentence)
+	for _, rawSentence := range sentences {
+		cleanSentence := Clean(rawSentence)
+		if cleanSentence == "" {
+			continue
+		}
+		sen := Words(cleanSentence)
+		niceSentence := rawSentence
+		niceSentence = strings.ReplaceAll(niceSentence, "\r\n", " ")
+		niceSentence = strings.ReplaceAll(niceSentence, "\n", " ")
+		co.rawSentences = append(co.rawSentences, niceSentence)
 		co.sentences = append(co.sentences, sen)
 	}
 	co.wordCount = make(map[string]int)
@@ -199,12 +206,20 @@ func MakeCorpus(filename string) (Corpus, error) {
 	return co, nil
 }
 
+func Clean(rawSentence string) string {
+	sentence := rawSentence
+	sentence = strings.ReplaceAll(sentence, `“`, "")
+	sentence = strings.ReplaceAll(sentence, `”`, "")
+	sentence = strings.ReplaceAll(sentence, `‘`, "")
+	sentence = strings.ReplaceAll(sentence, `’`, "")
+	sentence = strings.ReplaceAll(sentence, `"`, "")
+	sentence = strings.ReplaceAll(sentence, "\r\n", " ")
+	sentence = strings.ReplaceAll(sentence, "\n", " ")
+	sentence = strings.TrimSpace(sentence)
+	return sentence
+}
+
 func Sentences(text string) []string {
-	text = strings.ReplaceAll(text, `“`, "")
-	text = strings.ReplaceAll(text, `”`, "")
-	text = strings.ReplaceAll(text, `‘`, "")
-	text = strings.ReplaceAll(text, `’`, "")
-	text = strings.ReplaceAll(text, `"`, "")
 	res := []string{}
 	sentenceEnd := regexp.MustCompile(`[.?!]+`)
 	indices := sentenceEnd.FindAllStringIndex(text, -1)
@@ -212,9 +227,6 @@ func Sentences(text string) []string {
 	for _, span := range indices {
 		sentence := text[start:span[1]]
 		start = span[1]
-		sentence = strings.ReplaceAll(sentence, "\r\n", " ")
-		sentence = strings.ReplaceAll(sentence, "\n", " ")
-		sentence = strings.TrimSpace(sentence)
 		if sentence == "" {
 			continue
 		}
