@@ -24,15 +24,15 @@ func main() {
 	}
 	kn := Knowledge{}
 	if *html {
-		PrintHTMLCards(kn, co)
+		PrintHTMLCards(kn, co, 33)
 	} else {
-		PrintPlaintextReport(kn, co)
+		PrintPlaintextReport(kn, co, 200)
 	}
 }
 
-func PrintHTMLCards(kn Knowledge, co Corpus) {
+func PrintHTMLCards(kn Knowledge, co Corpus, count int) {
 	fmt.Println(`<!DOCTYPE html>
-<html dir="rtl">
+<html dir="auto">
 <head>
 <meta charset="UTF-8">
 <style>
@@ -51,7 +51,7 @@ p {
 <title>Text Document</title>
 </head>
 <body>`)
-	for n := 1; n <= 33; n++ {
+	for n := 1; n <= count; n++ {
 		sen, delta, _ := Best(kn, co)
 		kn.Learn(delta)
 		fmt.Println(`<div class="card">`)
@@ -66,13 +66,11 @@ p {
 		`)
 }
 
-func PrintPlaintextReport(kn Knowledge, co Corpus) {
+func PrintPlaintextReport(kn Knowledge, co Corpus, count int) {
 	n := 1
 	for {
-		// log.Println("Started selecting best sentence")
-		sen, delta, u := Best(kn, co)
-		// log.Println("Finished selecting best sentence")
-		if u <= 0.0001 {
+		sen, delta, usefulness := Best(kn, co)
+		if n > count || usefulness <= 0.0001 {
 			break
 		}
 		kn.Learn(delta)
@@ -89,15 +87,15 @@ func Best(kn Knowledge, co Corpus) (string, Knowledge, float64) {
 	bestVal := math.Inf(-1)
 	for rsen, sen := next(); sen != nil; rsen, sen = next() {
 		delta := kn.Delta(sen)
-		u := Usefulness(delta, co)
+		usefulness := Usefulness(delta, co)
 		comp := Complexity(delta)
 		if comp > 8 {
 			continue
 		}
-		if bestVal < u {
+		if bestVal < usefulness {
 			bestRsent = rsen
 			bestDelta = delta
-			bestVal = u
+			bestVal = usefulness
 		}
 	}
 	return bestRsent, bestDelta, bestVal
@@ -196,6 +194,8 @@ func MakeCorpus(filename string) (Corpus, error) {
 func Sentences(text string) []string {
 	text = strings.ReplaceAll(text, `“`, "")
 	text = strings.ReplaceAll(text, `”`, "")
+	text = strings.ReplaceAll(text, `‘`, "")
+	text = strings.ReplaceAll(text, `’`, "")
 	text = strings.ReplaceAll(text, `"`, "")
 	res := []string{}
 	sentenceEnd := regexp.MustCompile(`[.?!]+`)
