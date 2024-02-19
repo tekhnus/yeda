@@ -24,13 +24,13 @@ func main() {
 	}
 	kn := Knowledge{}
 	if *html {
-		PrintHTMLCards(kn, co, 33)
+		PrintHTMLCards(kn, co, 50, 8.0)
 	} else {
-		PrintPlaintextReport(kn, co, 200)
+		PrintPlaintextReport(kn, co, 200, 8.0)
 	}
 }
 
-func PrintHTMLCards(kn Knowledge, co Corpus, count int) {
+func PrintHTMLCards(kn Knowledge, co Corpus, count int, maxComplexity float64) {
 	fmt.Println(`<!DOCTYPE html>
 <html dir="auto">
 <head>
@@ -52,7 +52,7 @@ p {
 </head>
 <body>`)
 	for n := 1; n <= count; n++ {
-		sen, delta, _ := Best(kn, co)
+		sen, delta, _ := Best(kn, co, maxComplexity)
 		kn.Learn(delta)
 		fmt.Println(`<div class="card">`)
 		fmt.Println(`<h4>`, n, `</h4>`)
@@ -66,14 +66,14 @@ p {
 		`)
 }
 
-func PrintPlaintextReport(kn Knowledge, co Corpus, count int) {
+func PrintPlaintextReport(kn Knowledge, co Corpus, count int, maxComplexity float64) {
 	fmt.Printf("%d words in corpus\n", len(co.wordCount))
 	fmt.Println()
 
 	fmt.Printf("sentences  words  word_percentage    sentence\n")
 	n := 1
 	for {
-		sen, delta, usefulness := Best(kn, co)
+		sen, delta, usefulness := Best(kn, co, maxComplexity)
 		if n > count || usefulness <= 0.0001 {
 			break
 		}
@@ -84,25 +84,25 @@ func PrintPlaintextReport(kn Knowledge, co Corpus, count int) {
 	}
 }
 
-func Best(kn Knowledge, co Corpus) (string, Knowledge, float64) {
+func Best(kn Knowledge, co Corpus, maxComplexity float64) (string, Knowledge, float64) {
 	next := co.Sentences()
-	var bestRsent string
-	var bestDelta Knowledge
-	bestVal := math.Inf(-1)
-	for rsen, sen := next(); sen != nil; rsen, sen = next() {
-		delta := kn.Delta(sen)
-		usefulness := Usefulness(delta, co)
-		comp := Complexity(delta)
-		if comp > 8 {
+	var rawSentenceBest string
+	var knowledgeDeltaBest Knowledge
+	usefulnessBest := math.Inf(-1)
+	for rawSentence, sentence := next(); sentence != nil; rawSentence, sentence = next() {
+		knowledgeDelta := kn.Delta(sentence)
+		usefulness := Usefulness(knowledgeDelta, co)
+		complexity := Complexity(knowledgeDelta)
+		if complexity > maxComplexity {
 			continue
 		}
-		if bestVal < usefulness {
-			bestRsent = rsen
-			bestDelta = delta
-			bestVal = usefulness
+		if usefulnessBest < usefulness {
+			rawSentenceBest = rawSentence
+			knowledgeDeltaBest = knowledgeDelta
+			usefulnessBest = usefulness
 		}
 	}
-	return bestRsent, bestDelta, bestVal
+	return rawSentenceBest, knowledgeDeltaBest, usefulnessBest
 }
 
 func Usefulness(kn Knowledge, co Corpus) float64 {
@@ -141,7 +141,7 @@ func (kn *Knowledge) Learn(delta Knowledge) {
 }
 
 type Corpus struct {
-	rawsentences []string
+	rawSentences []string
 	sentences    [][]string
 	wordCount    map[string]int
 	totalWords   int
@@ -153,10 +153,10 @@ func (co Corpus) Sentences() func() (string, []string) {
 		if i == len(co.sentences) {
 			return "", nil
 		}
-		rres := co.rawsentences[i]
-		res := co.sentences[i]
+		rawSentence := co.rawSentences[i]
+		sentence := co.sentences[i]
 		i++
-		return rres, res
+		return rawSentence, sentence
 	}
 }
 
@@ -177,7 +177,7 @@ func MakeCorpus(filename string) (Corpus, error) {
 
 	for _, rawsentence := range sentences {
 		sen := Words(rawsentence)
-		co.rawsentences = append(co.rawsentences, rawsentence)
+		co.rawSentences = append(co.rawSentences, rawsentence)
 		co.sentences = append(co.sentences, sen)
 	}
 	co.wordCount = make(map[string]int)
