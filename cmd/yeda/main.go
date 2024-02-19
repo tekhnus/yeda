@@ -15,9 +15,13 @@ import (
 func main() {
 	html := flag.Bool("html", false, "Print html")
 	flag.Parse()
+	if flag.NArg() < 1 {
+		log.Fatal("Usage: yeda <filename>")
+	}
+	filename := flag.Arg(0)
 
 	log.Println("Started loading the corpus")
-	co, err := MakeCorpus(flag.Arg(0))
+	co, err := MakeCorpus(filename)
 	log.Println("Finished loading the corpus")
 	if err != nil {
 		log.Fatal(err)
