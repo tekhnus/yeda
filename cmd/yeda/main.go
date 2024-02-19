@@ -181,10 +181,10 @@ func MakeCorpus(filename string) (Corpus, error) {
 
 	for _, rawSentence := range sentences {
 		cleanSentence := Clean(rawSentence)
-		if cleanSentence == "" {
+		sen := Words(cleanSentence)
+		if len(sen) == 0 {
 			continue
 		}
-		sen := Words(cleanSentence)
 		niceSentence := rawSentence
 		niceSentence = MakeNice(niceSentence)
 		co.rawSentences = append(co.rawSentences, niceSentence)
