@@ -179,16 +179,14 @@ func MakeCorpus(filename string) (Corpus, error) {
 	}
 	sentences := Sentences(string(bt))
 
-	for _, rawSentence := range sentences {
-		cleanSentence := Clean(rawSentence)
-		sen := Words(cleanSentence)
-		if len(sen) == 0 {
+	for _, unparsedSentence := range sentences {
+		sentence := Words(unparsedSentence)
+		if len(sentence) == 0 {
 			continue
 		}
-		niceSentence := rawSentence
-		niceSentence = MakeNice(niceSentence)
-		co.rawSentences = append(co.rawSentences, niceSentence)
-		co.sentences = append(co.sentences, sen)
+		rawSentence := MakeRawSentence(unparsedSentence)
+		co.rawSentences = append(co.rawSentences, rawSentence)
+		co.sentences = append(co.sentences, sentence)
 	}
 	co.wordCount = make(map[string]int)
 	next := co.Sentences()
@@ -205,13 +203,13 @@ func MakeCorpus(filename string) (Corpus, error) {
 	return co, nil
 }
 
-func MakeNice(rawSentence string) string {
-	rawSentence = strings.ReplaceAll(rawSentence, "\r\n", " ")
-	rawSentence = strings.ReplaceAll(rawSentence, "\n", " ")
+func MakeRawSentence(unparsedSentence string) string {
+	unparsedSentence = strings.ReplaceAll(unparsedSentence, "\r\n", " ")
+	unparsedSentence = strings.ReplaceAll(unparsedSentence, "\n", " ")
 
 	// This regex pattern matches a string that starts and ends with a letter, capturing it for extraction
 	pattern := regexp.MustCompile(`(?i)^[^a-z]*([a-z].*?[a-z])[^a-z]*$`)
-	matches := pattern.FindStringSubmatch(rawSentence)
+	matches := pattern.FindStringSubmatch(unparsedSentence)
 
 	if len(matches) > 1 {
 		return matches[1]
@@ -219,8 +217,8 @@ func MakeNice(rawSentence string) string {
 	return ""
 }
 
-func Clean(rawSentence string) string {
-	sentence := rawSentence
+func Clean(unparsedSentence string) string {
+	sentence := unparsedSentence
 	sentence = strings.ReplaceAll(sentence, `“`, "")
 	sentence = strings.ReplaceAll(sentence, `”`, "")
 	sentence = strings.ReplaceAll(sentence, `‘`, "")
@@ -248,9 +246,10 @@ func Sentences(text string) []string {
 	return res
 }
 
-func Words(sen string) []string {
+func Words(cleanedSentence string) []string {
+	cleanedSentence = Clean(cleanedSentence)
 	res := []string{}
-	for _, word := range strings.FieldsFunc(sen, IsSeparator) {
+	for _, word := range strings.FieldsFunc(cleanedSentence, IsSeparator) {
 		word = strings.ToLower(word)
 		if word == "" {
 			continue
