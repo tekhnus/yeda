@@ -46,7 +46,7 @@ func PrintAnkiCards(kn Knowledge, co Corpus, count int, maxComplexity float64) {
 		for _, span := range words {
 			beg := span[0]
 			end := span[1]
-			fmt.Println(sen[:beg] + `<b>` + sen[beg:end] + `</b>` + sen[end:] + ";" + "PUT THE TRANSLATION HERE")
+			fmt.Println(sen[:beg] + `<b><u>` + sen[beg:end] + `</u></b>` + sen[end:] + ";" + "PUT THE TRANSLATION HERE")
 		}
 	}
 }
