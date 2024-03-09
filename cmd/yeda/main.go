@@ -41,14 +41,13 @@ func PrintAnkiCards(kn Knowledge, co Corpus, count int, maxComplexity float64) {
 	for n := 1; n <= count; n++ {
 		sen, _, delta, _ := Best(kn, co, maxComplexity)
 		kn.Learn(delta)
-		re := regexp.MustCompile(`[\p{L}\d]+`)
+		re := regexp.MustCompile(`[\p{L}\p{N}]+`)
 		words := re.FindAllStringIndex(sen, -1)
 		for _, span := range words {
 			beg := span[0]
 			end := span[1]
 			fmt.Println(sen[:beg] + `<b>` + sen[beg:end] + `</b>` + sen[end:] + ";" + "PUT THE TRANSLATION HERE")
 		}
-		fmt.Println(sen)
 	}
 }
 
@@ -228,7 +227,7 @@ func MakeRawSentence(unparsedSentence string) string {
 	unparsedSentence = strings.ReplaceAll(unparsedSentence, "\n", " ")
 
 	// This regex pattern matches a string that starts and ends with a letter, capturing it for extraction
-	pattern := regexp.MustCompile(`(?i)^[^a-z]*([a-z].*?[a-z])[^a-z]*$`)
+	pattern := regexp.MustCompile(`(?i)^[^\p{L}]*([\p{L}].*?[\p{L}])[^\p{L}]*$`)
 	matches := pattern.FindStringSubmatch(unparsedSentence)
 
 	if len(matches) > 1 {
