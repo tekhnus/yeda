@@ -14,6 +14,7 @@ import (
 
 func main() {
 	html := flag.Bool("html", false, "Print html")
+	anki := flag.Bool("anki", false, "Print anki")
 	flag.Parse()
 	if flag.NArg() < 1 {
 		log.Fatal("Usage: yeda <filename>")
@@ -29,8 +30,18 @@ func main() {
 	kn := Knowledge{}
 	if *html {
 		PrintHTMLCards(kn, co, 50, 8.0)
+	} else if *anki {
+		PrintAnkiCards(kn, co, 50, 8.0)
 	} else {
 		PrintPlaintextReport(kn, co, 200, 8.0)
+	}
+}
+
+func PrintAnkiCards(kn Knowledge, co Corpus, count int, maxComplexity float64) {
+	for n := 1; n <= count; n++ {
+		sen, delta, _ := Best(kn, co, maxComplexity)
+		kn.Learn(delta)
+		fmt.Println(sen)
 	}
 }
 
