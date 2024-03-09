@@ -39,8 +39,15 @@ func main() {
 
 func PrintAnkiCards(kn Knowledge, co Corpus, count int, maxComplexity float64) {
 	for n := 1; n <= count; n++ {
-		sen, delta, _ := Best(kn, co, maxComplexity)
+		sen, _, delta, _ := Best(kn, co, maxComplexity)
 		kn.Learn(delta)
+		re := regexp.MustCompile(`[\p{L}\d]+`)
+		words := re.FindAllStringIndex(sen, -1)
+		for _, span := range words {
+			beg := span[0]
+			end := span[1]
+			fmt.Println(sen[:beg] + `<b>` + sen[beg:end] + `</b>` + sen[end:] + ";" + "PUT THE TRANSLATION HERE")
+		}
 		fmt.Println(sen)
 	}
 }
@@ -67,7 +74,7 @@ p {
 </head>
 <body>`)
 	for n := 1; n <= count; n++ {
-		sen, delta, _ := Best(kn, co, maxComplexity)
+		sen, _, delta, _ := Best(kn, co, maxComplexity)
 		kn.Learn(delta)
 		fmt.Println(`<div class="card">`)
 		fmt.Println(`<h4>`, n, `</h4>`)
@@ -88,7 +95,7 @@ func PrintPlaintextReport(kn Knowledge, co Corpus, count int, maxComplexity floa
 	fmt.Printf("sentences  words  word_percentage    sentence\n")
 	n := 1
 	for {
-		sen, delta, usefulness := Best(kn, co, maxComplexity)
+		sen, _, delta, usefulness := Best(kn, co, maxComplexity)
 		if n > count || usefulness <= 0.0001 {
 			break
 		}
@@ -99,9 +106,10 @@ func PrintPlaintextReport(kn Knowledge, co Corpus, count int, maxComplexity floa
 	}
 }
 
-func Best(kn Knowledge, co Corpus, maxComplexity float64) (string, Knowledge, float64) {
+func Best(kn Knowledge, co Corpus, maxComplexity float64) (string, []string, Knowledge, float64) {
 	next := co.Sentences()
 	var rawSentenceBest string
+	var sentenceBest []string
 	var knowledgeDeltaBest Knowledge
 	usefulnessBest := math.Inf(-1)
 	for rawSentence, sentence := next(); sentence != nil; rawSentence, sentence = next() {
@@ -113,11 +121,12 @@ func Best(kn Knowledge, co Corpus, maxComplexity float64) (string, Knowledge, fl
 		}
 		if usefulnessBest < usefulness {
 			rawSentenceBest = rawSentence
+			sentenceBest = sentence
 			knowledgeDeltaBest = knowledgeDelta
 			usefulnessBest = usefulness
 		}
 	}
-	return rawSentenceBest, knowledgeDeltaBest, usefulnessBest
+	return rawSentenceBest, sentenceBest, knowledgeDeltaBest, usefulnessBest
 }
 
 func Usefulness(kn Knowledge, co Corpus) float64 {
