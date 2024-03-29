@@ -1,12 +1,20 @@
 Usage:
 
 ```
-# You'd better install Nix.
+# 1. You'd better install Nix.
 nix develop
 
-# To look at the report:
-./scripts/run <book.txt>  
+# 2. Put your book into book.txt.
 
-# To make an html with cards:
-./scripts/run -html <book.txt>  
+# 3. Use:
+
+#   To print the learning curve:
+./scripts/run book.txt
+
+#   To make an html page with cards:
+./scripts/run -html book.txt >cards.html
+
+#   To make Anki cards:
+# Put your OpenAI API key in ~/.yeda-openai-api-key.txt
+./scripts/run -anki book.txt >cards.txt
 ```
