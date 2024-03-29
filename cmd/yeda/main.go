@@ -1,11 +1,14 @@
 package main
 
 import (
+	"bytes"
+	"encoding/json"
 	"flag"
 	"fmt"
 	"io"
 	"log"
 	"math"
+	"net/http"
 	"os"
 	"regexp"
 	"strings"
@@ -31,7 +34,7 @@ func main() {
 	if *html {
 		PrintHTMLCards(kn, co, 50, 8.0)
 	} else if *anki {
-		PrintAnkiCards(kn, co, 50, 8.0)
+		PrintAnkiCards(kn, co, 21, 8.0)
 	} else {
 		PrintPlaintextReport(kn, co, 200, 8.0)
 	}
@@ -41,8 +44,67 @@ func PrintAnkiCards(kn Knowledge, co Corpus, count int, maxComplexity float64) {
 	for n := 1; n <= count; n++ {
 		sen, _, delta, _ := Best(kn, co, maxComplexity)
 		kn.Learn(delta)
-		fmt.Println(sen + ";" + "PUT THE TRANSLATION HERE")
+		words, translations, err := MakeTranslation(sen)
+		if err != nil {
+			log.Panic(err)
+		}
+		for i := range words {
+			fmt.Println(FormatSentence(words, translations, i))
+		}
 	}
+}
+
+func FormatSentence(words []string, translations []string, i int) string {
+	res := ""
+	for j, word := range words {
+		if j == i {
+			res += "<b><u>"
+		}
+		res += word + " "
+		if j == i {
+			res += "</u></b>"
+		}
+	}
+	res += ";"
+	for j, word := range translations {
+		if j == i {
+			res += "<b><u>"
+		}
+		res += word + " "
+		if j == i {
+			res += "</u></b>"
+		}
+	}
+	return res
+}
+
+var prompt = `You will receive a sentence in Hebrew. Do the following:
+	1. Fix the punctuation and spacing
+	2. If there are errors, fix them at your discretion
+	3. Split the sentence into words
+	4. Print your response in the following format:
+	     WORD1 ::: ENGLISH TRANSLATION
+	     WORD2 ::: ENGLISH TRANSLATION
+	   One line is one word. Don't print anything else.
+	`
+
+func MakeTranslation(sentence string) ([]string, []string, error) {
+	res, err := AskOpenAI(prompt, sentence)
+	if err != nil {
+		return nil, nil, err
+	}
+	lines := strings.Split(strings.TrimSpace(res), "\n")
+	var as []string
+	var bs []string
+	for _, line := range lines {
+		tokens := strings.Split(line, ":::")
+		if len(tokens) != 2 {
+			return nil, nil, fmt.Errorf("Bad line: %s", tokens)
+		}
+		as = append(as, tokens[0])
+		bs = append(bs, tokens[1])
+	}
+	return as, bs, nil
 }
 
 func PrintHTMLCards(kn Knowledge, co Corpus, count int, maxComplexity float64) {
@@ -274,4 +336,96 @@ func Words(cleanedSentence string) []string {
 
 func IsSeparator(c rune) bool {
 	return !unicode.IsLetter(c) && !unicode.IsNumber(c) && c != '’'
+}
+
+func AskOpenAI(systemPrompt string, userPrompt string) (string, error) {
+	fname := os.ExpandEnv("$HOME/.yeda-openai-api-key.txt")
+	keyfile, err := os.Open(fname)
+	if err != nil {
+		return "", err
+	}
+	defer keyfile.Close()
+
+	apiKeyBytes, err := io.ReadAll(keyfile)
+	if err != nil {
+		return "", err
+	}
+	apiKey := strings.TrimSpace(string(apiKeyBytes))
+
+	// Create a new request
+	data := OpenAIRequest{
+		Model:    "gpt-3.5-turbo",
+		Messages: []OpenAIMessage{{Role: "system", Content: systemPrompt}, {Role: "user", Content: userPrompt}},
+	}
+	payloadBytes, err := json.Marshal(data)
+	if err != nil {
+		return "", err
+	}
+	log.Println("Request:", string(payloadBytes))
+	body := bytes.NewReader(payloadBytes)
+
+	// Create an HTTP client and make the request
+	client := &http.Client{}
+	req, err := http.NewRequest("POST", "https://api.openai.com/v1/chat/completions", body)
+	if err != nil {
+		return "", err
+	}
+
+	// Set the content type and authorization headers
+	req.Header.Set("Content-Type", "application/json")
+	req.Header.Set("Authorization", "Bearer "+apiKey)
+
+	// Send the request
+	resp, err := client.Do(req)
+	if err != nil {
+		return "", err
+	}
+	defer resp.Body.Close()
+
+	// Read and output the response
+	responseBody, err := io.ReadAll(resp.Body)
+	if err != nil {
+		return "", err
+	}
+	log.Println("Response:", string(responseBody))
+	var response OpenAIResponse
+	err = json.Unmarshal(responseBody, &response)
+	if err != nil {
+		return "", err
+	}
+	return response.Choices[0].Message.Content, nil
+}
+
+type OpenAIMessage struct {
+	Role    string `json:"role"`
+	Content string `json:"content"`
+}
+
+type OpenAIRequest struct {
+	Model    string          `json:"model"`
+	Messages []OpenAIMessage `json:"messages"`
+}
+
+// Define the structs that match the JSON structure
+type OpenAIResponse struct {
+	ID                string   `json:"id"`
+	Object            string   `json:"object"`
+	Created           int64    `json:"created"`
+	Model             string   `json:"model"`
+	Choices           []Choice `json:"choices"`
+	Usage             Usage    `json:"usage"`
+	SystemFingerprint string   `json:"system_fingerprint"`
+}
+
+type Choice struct {
+	Index        int              `json:"index"`
+	Message      OpenAIMessage    `json:"message"`
+	Logprobs     *json.RawMessage `json:"logprobs"` // Use *json.RawMessage for null or detailed data
+	FinishReason string           `json:"finish_reason"`
+}
+
+type Usage struct {
+	PromptTokens     int `json:"prompt_tokens"`
+	CompletionTokens int `json:"completion_tokens"`
+	TotalTokens      int `json:"total_tokens"`
 }

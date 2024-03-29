@@ -16,8 +16,8 @@ go run ./cmd/yeda/main.go \
 	>internal/testdata/cards.html \
 	|| die
 
-go run ./cmd/yeda/main.go \
-	-anki \
-	internal/testdata/corpus.txt \
-	>internal/testdata/anki.txt \
-	|| die
+# go run ./cmd/yeda/main.go \
+# 	-anki \
+# 	internal/testdata/corpus.txt \
+# 	>internal/testdata/anki.txt \
+# 	|| die
