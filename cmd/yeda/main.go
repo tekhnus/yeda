@@ -41,13 +41,7 @@ func PrintAnkiCards(kn Knowledge, co Corpus, count int, maxComplexity float64) {
 	for n := 1; n <= count; n++ {
 		sen, _, delta, _ := Best(kn, co, maxComplexity)
 		kn.Learn(delta)
-		re := regexp.MustCompile(`[\p{L}\p{N}]+`)
-		words := re.FindAllStringIndex(sen, -1)
-		for _, span := range words {
-			beg := span[0]
-			end := span[1]
-			fmt.Println(sen[:beg] + `<b><u>` + sen[beg:end] + `</u></b>` + sen[end:] + ";" + "PUT THE TRANSLATION HERE")
-		}
+		fmt.Println(sen + ";" + "PUT THE TRANSLATION HERE")
 	}
 }
 
