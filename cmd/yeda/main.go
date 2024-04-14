@@ -78,15 +78,22 @@ func FormatSentence(words []string, translations []string, i int) string {
 	return res
 }
 
-var prompt = `You will receive a sentence in Hebrew. Do the following:
-	1. Fix the punctuation and spacing
-	2. If there are errors, fix them at your discretion
-	3. Split the sentence into words
-	4. Print your response in the following format:
-	     WORD1 ::: ENGLISH TRANSLATION
-	     WORD2 ::: ENGLISH TRANSLATION
-	   One line is one word. Don't print anything else.
-	`
+var prompt = `
+	You will receive a sentence in Hebrew.
+	Translate it to Russian word-by-word.
+	Print the result in the following format:
+	     WORD1 ::: TRANSLATION
+	     WORD2 ::: TRANSLATION
+	One line is one word. Don't print anything else.
+
+	Details:
+	1. Try to make the translation coherent.
+	2. If there are errors of any kind (formating, punctuation, semantic)
+	   in the original sentence then modify the sentence to correct them.
+	3. If some words don't make sense on their own
+	   (function words, phrasemes, etc.), join them together.
+	4. The translation should have proper punctuation and formatting.
+`
 
 func MakeTranslation(sentence string) ([]string, []string, error) {
 	res, err := AskOpenAI(prompt, sentence)
