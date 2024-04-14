@@ -372,7 +372,7 @@ func AskOpenAI(systemPrompt string, userPrompt string) (string, error) {
 
 	// Create a new request
 	data := OpenAIRequest{
-		Model:    "gpt-3.5-turbo",
+		Model:    "gpt-4-turbo",
 		Messages: []OpenAIMessage{{Role: "system", Content: systemPrompt}, {Role: "user", Content: userPrompt}},
 	}
 	payloadBytes, err := json.Marshal(data)
