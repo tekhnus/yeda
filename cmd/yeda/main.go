@@ -80,19 +80,26 @@ func FormatSentence(words []string, translations []string, i int) string {
 
 var prompt = `
 	You will receive a sentence in Hebrew.
+
 	Translate it to Russian word-by-word.
-	Print the result in the following format:
-	     WORD1 ::: TRANSLATION
-	     WORD2 ::: TRANSLATION
-	One line is one word. Don't print anything else.
+	However, function words, phrasemes etc. should be joined together.
+	Also, try to make the translation as coherent as possible.
+
+	You must print the result precisely in the following format:
+	     WORD1:::TRANSLATION;;;
+	     WORD2:::TRANSLATION;;;
+	One line corresponds to one fragment.
+	The original fragment and its translation are separated by 3 colors.
+	The fragments are separated by 3 semicolons.
+	Example:
+		אני:::Я;;;
+		ממש אוהב:::очень люблю;;;
+		לאכול:::есть;;;
 
 	Details:
-	1. Try to make the translation coherent.
-	2. If there are errors of any kind (formating, punctuation, semantic)
+	1. If there are errors of any kind (formating, punctuation, semantic)
 	   in the original sentence then modify the sentence to correct them.
-	3. If some words don't make sense on their own
-	   (function words, phrasemes, etc.), join them together.
-	4. The translation should have proper punctuation and formatting.
+	2. The translation should have proper punctuation and formatting.
 `
 
 func MakeTranslation(sentence string) ([]string, []string, error) {
@@ -100,10 +107,14 @@ func MakeTranslation(sentence string) ([]string, []string, error) {
 	if err != nil {
 		return nil, nil, err
 	}
-	lines := strings.Split(strings.TrimSpace(res), "\n")
+	lines := strings.Split(strings.TrimSpace(res), ";;;")
 	var as []string
 	var bs []string
 	for _, line := range lines {
+		line := strings.TrimSpace(line)
+		if line == "" {
+			continue
+		}
 		tokens := strings.Split(line, ":::")
 		if len(tokens) != 2 {
 			return nil, nil, fmt.Errorf("Bad line: %s", tokens)
