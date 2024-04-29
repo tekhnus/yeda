@@ -9,7 +9,7 @@ nix develop
 # 3. Use:
 
 #   To print the learning curve:
-./scripts/run book.txt
+./scripts/run -report book.txt
 
 #   To make an html page with cards:
 ./scripts/run -html book.txt >cards.html

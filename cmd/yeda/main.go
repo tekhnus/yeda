@@ -16,11 +16,13 @@ import (
 )
 
 func main() {
+	report := flag.Bool("report", false, "Print report")
 	html := flag.Bool("html", false, "Print html")
 	anki := flag.Bool("anki", false, "Print anki")
 	flag.Parse()
 	if flag.NArg() < 1 {
-		log.Fatal("Usage: yeda <filename>")
+		flag.Usage()
+		os.Exit(1)
 	}
 	filename := flag.Arg(0)
 
@@ -31,12 +33,15 @@ func main() {
 		log.Fatal(err)
 	}
 	kn := Knowledge{}
-	if *html {
+	if *report {
+		PrintPlaintextReport(kn, co, 200, 8.0)
+	} else if *html {
 		PrintHTMLCards(kn, co, 50, 8.0)
 	} else if *anki {
 		PrintAnkiCards(kn, co, 21, 8.0)
 	} else {
-		PrintPlaintextReport(kn, co, 200, 8.0)
+		flag.Usage()
+		os.Exit(1)
 	}
 }
 
