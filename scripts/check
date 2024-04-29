@@ -6,6 +6,7 @@ die() {
 }
 
 go run ./cmd/yeda/main.go \
+	-report \
 	internal/testdata/corpus.txt \
 	>internal/testdata/report.txt \
 	|| die
