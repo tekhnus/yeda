@@ -19,6 +19,9 @@ func main() {
 	report := flag.Bool("report", false, "Print report")
 	html := flag.Bool("html", false, "Print html")
 	anki := flag.Bool("anki", false, "Print anki")
+	src := flag.String("src", "English", "Source language")
+	dst := flag.String("dst", "Russian", "Target language")
+
 	flag.Parse()
 	if flag.NArg() < 1 {
 		flag.Usage()
@@ -38,18 +41,18 @@ func main() {
 	} else if *html {
 		PrintHTMLCards(kn, co, 50, 8.0)
 	} else if *anki {
-		PrintAnkiCards(kn, co, 21, 8.0)
+		PrintAnkiCards(kn, co, 21, 8.0, *src, *dst)
 	} else {
 		flag.Usage()
 		os.Exit(1)
 	}
 }
 
-func PrintAnkiCards(kn Knowledge, co Corpus, count int, maxComplexity float64) {
+func PrintAnkiCards(kn Knowledge, co Corpus, count int, maxComplexity float64, sourceLang string, targetLang string) {
 	for n := 1; n <= count; n++ {
 		sen, _, delta, _ := Best(kn, co, maxComplexity)
 		kn.Learn(delta)
-		words, translations, err := MakeTranslation(sen)
+		words, translations, err := MakeTranslation(sen, sourceLang, targetLang)
 		if err != nil {
 			log.Panic(err)
 		}
@@ -83,10 +86,11 @@ func FormatSentence(words []string, translations []string, i int) string {
 	return res
 }
 
-var prompt = `
-	You will receive a sentence in Hebrew.
+func MakePrompt(sourceLang string, targetLang string) string {
+	template := `
+	You will receive a sentence in %s.
 
-	Translate it to Russian word-by-word.
+	Translate it to %s word-by-word.
 	However, function words, phrasemes etc. should be joined together.
 	Also, try to make the translation as coherent as possible.
 
@@ -105,10 +109,12 @@ var prompt = `
 	1. If there are errors of any kind (formating, punctuation, semantic)
 	   in the original sentence then modify the sentence to correct them.
 	2. The translation should have proper punctuation and formatting.
-`
+	`
+	return fmt.Sprintf(template, sourceLang, targetLang)
+}
 
-func MakeTranslation(sentence string) ([]string, []string, error) {
-	res, err := AskOpenAI(prompt, sentence)
+func MakeTranslation(sentence string, sourceLang string, targetLang string) ([]string, []string, error) {
+	res, err := AskOpenAI(MakePrompt(sourceLang, targetLang), sentence)
 	if err != nil {
 		return nil, nil, err
 	}
