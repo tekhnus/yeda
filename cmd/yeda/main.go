@@ -357,7 +357,7 @@ func IsSeparator(c rune) bool {
 }
 
 func AskOpenAI(systemPrompt string, userPrompt string) (string, error) {
-	fname := os.ExpandEnv("$HOME/.yeda-openai-api-key.txt")
+	fname := os.ExpandEnv("$HOME/.config/yeda/openai-api-key.txt")
 	keyfile, err := os.Open(fname)
 	if err != nil {
 		return "", err

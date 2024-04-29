@@ -15,6 +15,6 @@ nix develop
 ./scripts/run -html book.txt >cards.html
 
 #   To make Anki cards:
-# Put your OpenAI API key in ~/.yeda-openai-api-key.txt
+# Put your OpenAI API key in ~/.config/yeda/openai-api-key.txt
 ./scripts/run -anki book.txt >cards.txt
 ```
