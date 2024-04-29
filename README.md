@@ -14,7 +14,7 @@ nix develop
 #   To make an html page with cards:
 ./scripts/run -html book.txt >cards.html
 
-#   To make Anki cards:
+#   To make English-Russian Anki cards from an book in English:
 # Put your OpenAI API key in ~/.config/yeda/openai-api-key.txt
-./scripts/run -anki book.txt >cards.txt
+./scripts/run -anki -src English -dst Russian book.txt >cards.txt
 ```
