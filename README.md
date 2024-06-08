@@ -5,12 +5,12 @@ It selects the best sentences for you to learn the most frequent words.
 
 ## Usage
 
-To select 25 sentences from tne book and make English-to-Russian Anki cards:
+To select 25 sentences from the book and create English-to-Russian Anki cards from them:
 ```
 ./scripts/run -anki -src English -dst Russian -n 25 some-book.txt >cards.txt
 ```
 
-To see a debug report showing the selected sentences and the learning curve:
+To see the debug report showing the selected sentences and the learning curve:
 ```
 ./scripts/run -report some-book.txt
 ```
