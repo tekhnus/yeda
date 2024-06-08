@@ -29,6 +29,11 @@ func Main() error {
 	n := flag.Int("n", 30, "Number of sentences")
 	src := flag.String("src", "English", "Source language")
 	dst := flag.String("dst", "Russian", "Target language")
+	verbose := flag.Bool("verbose", false, "Print debug info")
+
+	if !*verbose {
+		log.SetOutput(io.Discard)
+	}
 
 	flag.Parse()
 	if flag.NArg() < 1 {
