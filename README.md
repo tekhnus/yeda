@@ -1,20 +1,18 @@
-Usage:
+## About
 
+**yeda** makes Anki cards from a book of your choice.
+It selects the best sentences for you to learn the most frequent words.
+
+## Usage
+
+To make English-Russian Anki cards from a book in English:
 ```
-# 1. You'd better install Nix.
-nix develop
-
-# 2. Put your book into book.txt.
-
-# 3. Use:
-
-#   To print the learning curve:
-./scripts/run -report book.txt
-
-#   To make an html page with cards:
-./scripts/run -html book.txt >cards.html
-
-#   To make English-Russian Anki cards from an book in English:
-# Put your OpenAI API key in ~/.config/yeda/openai-api-key.txt
 ./scripts/run -anki -src English -dst Russian book.txt >cards.txt
 ```
+
+To see a debug report including the chosen sentences and the learning curve:
+```
+./scripts/run -report my-book.txt
+```
+
+It is recommended to install Nix and run all the commands within `nix develop`.
