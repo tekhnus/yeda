@@ -16,6 +16,13 @@ import (
 )
 
 func main() {
+	err := Main()
+	if err != nil {
+		log.Fatal(err)
+	}
+}
+
+func Main() error {
 	report := flag.Bool("report", false, "Print report")
 	html := flag.Bool("html", false, "Print html")
 	anki := flag.Bool("anki", false, "Print anki")
@@ -25,8 +32,7 @@ func main() {
 
 	flag.Parse()
 	if flag.NArg() < 1 {
-		flag.Usage()
-		os.Exit(1)
+		return fmt.Errorf("Usage: yeda book.txt")
 	}
 	filename := flag.Arg(0)
 
@@ -34,7 +40,7 @@ func main() {
 	co, err := MakeCorpus(filename)
 	log.Println("Finished loading the corpus")
 	if err != nil {
-		log.Fatal(err)
+		return err
 	}
 	kn := Knowledge{}
 	if *report {
@@ -42,25 +48,26 @@ func main() {
 	} else if *html {
 		PrintHTMLCards(kn, co, *n, 8.0)
 	} else if *anki {
-		PrintAnkiCards(kn, co, *n, 8.0, *src, *dst)
+		return PrintAnkiCards(kn, co, *n, 8.0, *src, *dst)
 	} else {
-		flag.Usage()
-		os.Exit(1)
+		return fmt.Errorf("Usage: yeda [-report | -html | -anki]")
 	}
+	return nil
 }
 
-func PrintAnkiCards(kn Knowledge, co Corpus, count int, maxComplexity float64, sourceLang string, targetLang string) {
+func PrintAnkiCards(kn Knowledge, co Corpus, count int, maxComplexity float64, sourceLang string, targetLang string) error {
 	for n := 1; n <= count; n++ {
 		sen, _, delta, _ := Best(kn, co, maxComplexity)
 		kn.Learn(delta)
 		words, translations, err := MakeTranslation(sen, sourceLang, targetLang)
 		if err != nil {
-			log.Panic(err)
+			return err
 		}
 		for i := range words {
 			fmt.Println(FormatSentence(words, translations, i))
 		}
 	}
+	return nil
 }
 
 func FormatSentence(words []string, translations []string, i int) string {
