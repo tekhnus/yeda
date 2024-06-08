@@ -5,14 +5,14 @@ It selects the best sentences for you to learn the most frequent words.
 
 ## Usage
 
-To make English-Russian Anki cards from a book in English:
+To select 25 sentences from tne book and make English-to-Russian Anki cards:
 ```
-./scripts/run -anki -src English -dst Russian book.txt >cards.txt
+./scripts/run -anki -src English -dst Russian -n 25 some-book.txt >cards.txt
 ```
 
-To see a debug report including the chosen sentences and the learning curve:
+To see a debug report showing the selected sentences and the learning curve:
 ```
-./scripts/run -report my-book.txt
+./scripts/run -report some-book.txt
 ```
 
 It is recommended to install Nix and run all the commands within `nix develop`.

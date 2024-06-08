@@ -19,6 +19,7 @@ func main() {
 	report := flag.Bool("report", false, "Print report")
 	html := flag.Bool("html", false, "Print html")
 	anki := flag.Bool("anki", false, "Print anki")
+	n := flag.Int("n", 30, "Number of sentences")
 	src := flag.String("src", "English", "Source language")
 	dst := flag.String("dst", "Russian", "Target language")
 
@@ -37,11 +38,11 @@ func main() {
 	}
 	kn := Knowledge{}
 	if *report {
-		PrintPlaintextReport(kn, co, 200, 8.0)
+		PrintPlaintextReport(kn, co, *n, 8.0)
 	} else if *html {
-		PrintHTMLCards(kn, co, 50, 8.0)
+		PrintHTMLCards(kn, co, *n, 8.0)
 	} else if *anki {
-		PrintAnkiCards(kn, co, 21, 8.0, *src, *dst)
+		PrintAnkiCards(kn, co, *n, 8.0, *src, *dst)
 	} else {
 		flag.Usage()
 		os.Exit(1)

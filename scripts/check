@@ -7,12 +7,14 @@ die() {
 
 go run ./cmd/yeda/main.go \
 	-report \
+	-n 200 \
 	internal/testdata/corpus.txt \
 	>internal/testdata/report.txt \
 	|| die
 
 go run ./cmd/yeda/main.go \
 	-html \
+	-n 50 \
 	internal/testdata/corpus.txt \
 	>internal/testdata/cards.html \
 	|| die
